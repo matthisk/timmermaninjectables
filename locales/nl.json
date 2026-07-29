@@ -1,0 +1,519 @@
+{
+  "common": {
+    "skip": "Ga naar de inhoud",
+    "brandSuffix": "Almere",
+    "menuOpen": "Menu openen",
+    "menuClose": "Menu sluiten",
+    "language": "English",
+    "languageCode": "EN",
+    "book": "Boek een consult",
+    "viewTreatments": "Bekijk behandelingen",
+    "readMore": "Lees meer",
+    "placeholder": "Placeholder — goedkeuring nodig",
+    "photoPlaceholder": "Fotografie-placeholder",
+    "nav": {
+      "home": "Home",
+      "doctor": "Uw arts",
+      "treatments": "Behandelingen",
+      "pricing": "Tarieven",
+      "contact": "Contact"
+    },
+    "footer": {
+      "intro": "Persoonlijke, artsgeleide cosmetische zorg in Almere, met aandacht voor een rustige uitleg en een natuurlijk behandelplan.",
+      "navigate": "Navigeren",
+      "contact": "Contact",
+      "addressLabel": "Adres",
+      "address": "Almere — exact adres volgt",
+      "phoneLabel": "Telefoon",
+      "phone": "[Telefoonnummer volgt]",
+      "emailLabel": "E-mail",
+      "email": "[E-mailadres volgt]",
+      "hoursLabel": "Openingstijden",
+      "hours": "[Openingstijden volgen]",
+      "copyright": "© 2026 Timmerman Injectables. Alle rechten voorbehouden.",
+      "privacy": "Privacy",
+      "cookies": "Cookies",
+      "disclaimer": "Medische disclaimer"
+    }
+  },
+  "meta": {
+    "home": {
+      "title": "Timmerman Injectables | Botoxkliniek in Almere",
+      "description": "Persoonlijke botulinetoxineconsulten en huidverbetering in Almere. Rustige uitleg, artsgeleide zorg en een behandelplan op maat."
+    },
+    "doctor": {
+      "title": "Uw arts | Timmerman Injectables Almere",
+      "description": "Maak kennis met de behandelend arts en de persoonlijke werkwijze van Timmerman Injectables in Almere."
+    },
+    "treatments": {
+      "title": "Behandelingen | Timmerman Injectables Almere",
+      "description": "Informatie over botulinetoxine en huidverbetering bij Timmerman Injectables in Almere."
+    },
+    "pricing": {
+      "title": "Tarieven | Timmerman Injectables Almere",
+      "description": "Bekijk de tariefstructuur voor botulinetoxine en huidverbetering. Definitieve prijzen volgen."
+    },
+    "contact": {
+      "title": "Contact en consult | Timmerman Injectables Almere",
+      "description": "Neem contact op met Timmerman Injectables in Almere of vraag een persoonlijk consult aan."
+    },
+    "privacy": {
+      "title": "Privacyverklaring | Timmerman Injectables",
+      "description": "Lees hoe Timmerman Injectables omgaat met persoonsgegevens."
+    },
+    "cookies": {
+      "title": "Cookieverklaring | Timmerman Injectables",
+      "description": "Lees welke cookies en lokale opslag deze website gebruikt."
+    },
+    "disclaimer": {
+      "title": "Medische disclaimer | Timmerman Injectables",
+      "description": "Belangrijke informatie over de medische content op de website van Timmerman Injectables."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Persoonlijke cosmetische zorg in Almere",
+      "titleBefore": "Subtiele zorg.",
+      "titleAccent": "Uw gezicht,",
+      "titleAfter": "uw verhaal.",
+      "lead": "Een rustige, persoonlijke benadering van botulinetoxine en huidverbetering — met tijd voor uw vragen en een behandelplan dat bij u past.",
+      "noteTitle": "Eén arts, één visie",
+      "note": "Vanaf het eerste gesprek tot de nazorg heeft u één vast aanspreekpunt."
+    },
+    "trust": [
+      {
+        "title": "BIG-registratie",
+        "text": "[Naam en BIG-nummer van de behandelend arts toevoegen]",
+        "placeholder": true
+      },
+      {
+        "title": "Persoonlijk consult",
+        "text": "Vooraf bespreken we wensen, gezondheid, risico’s en realistische verwachtingen.",
+        "placeholder": true
+      },
+      {
+        "title": "Nazorg bereikbaar",
+        "text": "[Nazorgprotocol en bereikbaarheid buiten openingstijden toevoegen]",
+        "placeholder": true
+      }
+    ],
+    "about": {
+      "eyebrow": "Over de arts",
+      "title": "Zorg begint met goed luisteren.",
+      "lead": "Timmerman Injectables is een kleinschalige kliniek rondom één behandelend professional. Dat betekent aandacht, continuïteit en een rustig gesprek zonder haast.",
+      "body": "Tijdens het consult kijken we niet alleen naar een behandelzone, maar vooral naar uw wens, mimiek en wat medisch verantwoord is. Een behandeling is nooit vanzelfsprekend; eerlijk adviseren of juist niet behandelen hoort daar ook bij.",
+      "signature": "[Naam behandelend arts]",
+      "photo": "Portret van de arts volgt"
+    },
+    "treatments": {
+      "eyebrow": "Behandelingen",
+      "title": "Klein aanbod, persoonlijke aandacht.",
+      "intro": "De precieze behandeling wordt pas na een medische intake bepaald. Onderstaande informatie is een eerste oriëntatie.",
+      "items": [
+        {
+          "title": "Botulinetoxine",
+          "text": "Gerichte behandeling waarbij tijdelijke spierontspanning kan worden ingezet voor een zachtere, uitgeruste uitstraling.",
+          "placeholder": true
+        },
+        {
+          "title": "Huidverbetering",
+          "text": "[Exact aanbod, product of techniek en medische informatie nog door de kliniek te bepalen.]",
+          "placeholder": true
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Waarom Timmerman",
+      "title": "Weloverwogen zorg, dicht bij huis.",
+      "intro": "Een kleinschalige praktijk in Almere waar uitleg en veiligheid net zo belangrijk zijn als het esthetische resultaat.",
+      "items": [
+        {
+          "icon": "01",
+          "title": "Eén vaste arts",
+          "text": "U ziet bij consult, behandeling en nazorg steeds dezelfde professional."
+        },
+        {
+          "icon": "02",
+          "title": "Eerlijk advies",
+          "text": "We bespreken ook wanneer wachten of niet behandelen de beste keuze is."
+        },
+        {
+          "icon": "03",
+          "title": "Rust en aandacht",
+          "text": "Geen lopende band, maar ruimte om vragen en verwachtingen zorgvuldig te bespreken."
+        },
+        {
+          "icon": "04",
+          "title": "Veiligheid voorop",
+          "text": "[Bevoegdheid, protocollen, productkeuze en klachtenregeling laten verifiëren.]",
+          "placeholder": true
+        }
+      ]
+    },
+    "results": {
+      "eyebrow": "Voor & na",
+      "title": "Echte resultaten volgen.",
+      "lead": "Hier komt, na schriftelijke toestemming van cliënten, een selectie van eigen voor-en-nafoto’s met gelijke belichting en een eerlijke toelichting.",
+      "before": "Voor",
+      "after": "Na",
+      "note": "Resultaten verschillen per persoon. De getoonde vlakken zijn uitsluitend beeldplaats­houders en tonen geen behandelresultaat."
+    },
+    "reviews": {
+      "eyebrow": "Ervaringen",
+      "title": "Wat cliënten straks vertellen.",
+      "intro": "Onderstaande teksten zijn bewust als placeholders gemarkeerd. Vervang ze uitsluitend door verifieerbare, goedgekeurde cliëntreviews.",
+      "items": [
+        {
+          "quote": "[Plaats hier een geverifieerde review over de rustige uitleg en persoonlijke benadering.]",
+          "name": "[Voornaam of initialen]",
+          "label": "Geverifieerde review volgt"
+        },
+        {
+          "quote": "[Plaats hier een geverifieerde review over het consult en een realistisch behandeladvies.]",
+          "name": "[Voornaam of initialen]",
+          "label": "Geverifieerde review volgt"
+        },
+        {
+          "quote": "[Plaats hier een geverifieerde review over nazorg en bereikbaarheid.]",
+          "name": "[Voornaam of initialen]",
+          "label": "Geverifieerde review volgt"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Veelgestelde vragen",
+      "title": "Eerst weten, dan beslissen.",
+      "items": [
+        {
+          "q": "Is een consult verplicht vóór een behandeling?",
+          "a": "Een zorgvuldige intake is nodig om uw gezondheid, wensen, mogelijke contra-indicaties, risico’s en verwachtingen te bespreken. [Definitieve werkwijze door de kliniek laten goedkeuren.]"
+        },
+        {
+          "q": "Hoe lang werkt botulinetoxine?",
+          "a": "Het effect is tijdelijk en verschilt per persoon, behandelde zone en dosering. De IGJ noemt als algemene indicatie ongeveer twaalf weken. Uw arts bespreekt wat in uw situatie realistisch is. [Medische tekst laten goedkeuren.]"
+        },
+        {
+          "q": "Vanaf welke leeftijd kan ik terecht?",
+          "a": "Cosmetische behandelingen zonder medische noodzaak zijn in Nederland in beginsel voor personen van 18 jaar en ouder. Bij twijfel bespreekt u dit met de arts."
+        },
+        {
+          "q": "Kan ik direct online boeken?",
+          "a": "De Calendly-koppeling wordt later toegevoegd. Tot die tijd kunt u via de contactpagina uw interesse in een consult doorgeven."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Nieuwsgierig naar wat bij u past?",
+      "text": "Begin met een rustig, persoonlijk consult in Almere. U zit nergens aan vast."
+    }
+  },
+  "doctor": {
+    "hero": {
+      "eyebrow": "Uw arts",
+      "title": "Eén professional. Eén vertrouwd gezicht.",
+      "lead": "Een persoonlijke kliniek begint bij weten wie er tegenover u zit — en voelen dat er echt naar u wordt geluisterd.",
+      "aside": "De naam, portretfotografie, opleidingen, ervaring, BIG-registratie en eventuele beroepsverenigingen moeten vóór publicatie door de kliniek worden aangeleverd en gecontroleerd."
+    },
+    "story": {
+      "eyebrow": "Kennismaken",
+      "title": "Aandacht vóór behandeling.",
+      "lead": "[Voeg hier het persoonlijke verhaal van de arts toe: achtergrond, motivatie, relevante opleiding en visie op cosmetische zorg.]",
+      "body": "De voorgestelde positionering is helder: rustig adviseren, natuurlijke expressie respecteren en alleen behandelen wanneer de verwachte balans tussen wens, effect en risico verantwoord is.",
+      "photo": "Definitief portret volgt"
+    },
+    "credentials": {
+      "eyebrow": "Kwalificaties",
+      "title": "Controleerbare deskundigheid.",
+      "intro": "Publiceer uitsluitend actuele, verifieerbare gegevens. Bezoekers moeten een BIG-registratie zelfstandig kunnen controleren.",
+      "items": [
+        {
+          "title": "Opleiding",
+          "text": "[Artsendiploma, relevante vervolgopleidingen en nascholing toevoegen.]"
+        },
+        {
+          "title": "BIG-registratie",
+          "text": "[BIG-nummer en directe link naar het BIG-register toevoegen.]"
+        },
+        {
+          "title": "Ervaring & lidmaatschappen",
+          "text": "[Aantal jaren ervaring, beroepsverenigingen en certificeringen verifiëren.]"
+        }
+      ]
+    },
+    "philosophy": {
+      "eyebrow": "Werkwijze",
+      "title": "Een plan dat begint bij uw vraag.",
+      "lead": "Geen standaardbehandeling, maar een stapsgewijs proces met ruimte om na te denken en vragen te stellen.",
+      "steps": [
+        {
+          "title": "Consult & intake",
+          "text": "We bespreken uw gezondheid, medicatie, eerdere behandelingen, wens en verwachtingen."
+        },
+        {
+          "title": "Persoonlijk advies",
+          "text": "U krijgt uitleg over opties, alternatieven, beperkingen, risico’s, kosten en nazorg."
+        },
+        {
+          "title": "Behandeling & nazorg",
+          "text": "Alleen met uw geïnformeerde toestemming behandelen we volgens het afgesproken plan."
+        }
+      ]
+    },
+    "safety": {
+      "eyebrow": "Veilige cosmetische zorg",
+      "title": "Medische zorg, geen impulsaankoop.",
+      "intro": "Botulinetoxine is een receptplichtig geneesmiddel en injecteren is een voorbehouden handeling. De kliniek moet vóór livegang alle onderstaande procesclaims bevestigen.",
+      "items": [
+        "Uitvoering door een aantoonbaar bevoegde en bekwame arts",
+        "Medische anamnese en informed consent vóór behandeling",
+        "Transparante uitleg over risico’s, alternatieven en realistische resultaten",
+        "Duidelijke instructies voor nazorg, complicaties en bereikbaarheid",
+        "Onafhankelijke klachtenregeling conform de Wkkgz"
+      ]
+    }
+  },
+  "treatments": {
+    "hero": {
+      "eyebrow": "Behandelingen",
+      "title": "Gericht behandelen, ruim de tijd nemen.",
+      "lead": "Een overzichtelijk aanbod met botulinetoxine als focus. De medische intake bepaalt altijd of en welke behandeling passend is.",
+      "aside": "Alle medische teksten, behandelzones, productnamen, indicaties en nazorginformatie zijn conceptcontent en vereisen goedkeuring van de behandelend arts."
+    },
+    "items": [
+      {
+        "number": "01",
+        "eyebrow": "Botulinetoxine",
+        "title": "Tijdelijke ontspanning van specifieke spieren.",
+        "lead": "Botulinetoxine is een receptplichtig geneesmiddel dat de prikkeloverdracht naar behandelde spieren tijdelijk vermindert. Het effect en de duur verschillen per persoon.",
+        "body": "Tijdens het consult bespreekt de arts welke mimiek u wilt behouden, welk resultaat realistisch is, welke risico’s en bijwerkingen kunnen optreden en of er redenen zijn om niet te behandelen.",
+        "zonesTitle": "Mogelijke cosmetische behandelzones",
+        "zones": [
+          "Fronsgebied",
+          "Voorhoofd",
+          "Kraaienpootjes"
+        ],
+        "note": "Deze lijst is indicatief, geen behandeladvies. Exacte zones, dosering, product, contra-indicaties en nazorg moeten door de kliniek worden vastgesteld."
+      },
+      {
+        "number": "02",
+        "eyebrow": "Huidverbetering",
+        "title": "Aanbod wordt nog uitgewerkt.",
+        "lead": "[Beschrijf hier uitsluitend de specifieke huidverbeterende behandeling(en) die de arts daadwerkelijk gaat aanbieden.]",
+        "body": "Voeg vóór publicatie per behandeling toe: doel, geschiktheid, product of techniek, aantal sessies, mogelijke risico’s, contra-indicaties, nazorg, verwachte hersteltijd en realistische resultaten.",
+        "zonesTitle": "Nog te bevestigen",
+        "zones": [
+          "[Behandeling of techniek]",
+          "[Geschikte huidvraag]",
+          "[Verwachte behandelduur]"
+        ],
+        "note": "Geen huidverbeterende behandeling is op dit moment inhoudelijk geclaimd. Dit onderdeel is een duidelijke contentplaceholder."
+      }
+    ],
+    "safety": {
+      "eyebrow": "Voor u boekt",
+      "title": "Een goed consult hoort bij de behandeling.",
+      "intro": "Bespreek altijd uw gezondheid, zwangerschap of borstvoeding, medicatie, allergieën, spier- of zenuwaandoeningen, eerdere behandelingen en verwachtingen met de arts. [Volledige contra-indicatielijst en instructies door de arts laten goedkeuren.]",
+      "items": [
+        "U ontvangt uitleg over te verwachten effecten en bekende risico’s.",
+        "Resultaten zijn persoonlijk en kunnen nooit worden gegarandeerd.",
+        "U krijgt schriftelijke voor- en nazorginstructies.",
+        "Bij onverwachte klachten moet duidelijk zijn wie u direct kunt bereiken."
+      ]
+    }
+  },
+  "pricing": {
+    "hero": {
+      "eyebrow": "Tarieven",
+      "title": "Transparant vóór u beslist.",
+      "lead": "De definitieve prijzen worden later toegevoegd. Tijdens het consult ontvangt u vooraf een helder behandelvoorstel met totale kosten.",
+      "aside": "Alle prijzen, inbegrepen diensten, betaalvoorwaarden en annuleringsvoorwaarden zijn placeholders en moeten door de kliniek worden vastgesteld."
+    },
+    "note": {
+      "title": "Nog niet definitief",
+      "text": "Gebruik deze tabel als invulstructuur. Publiceer pas nadat product, doseringsmodel, btw-behandeling en voorwaarden zijn gecontroleerd.",
+      "extra": "Een consult leidt niet automatisch tot een behandeling."
+    },
+    "table": {
+      "caption": "Concept prijslijst",
+      "treatment": "Behandeling",
+      "detail": "Toelichting",
+      "price": "Tarief",
+      "rows": [
+        {
+          "name": "Botulinetoxine — 1 zone",
+          "detail": "[Definitie van zone en inbegrepen nacontrole toevoegen]",
+          "price": "€ —"
+        },
+        {
+          "name": "Botulinetoxine — 2 zones",
+          "detail": "[Definitie van zones en inbegrepen nacontrole toevoegen]",
+          "price": "€ —"
+        },
+        {
+          "name": "Botulinetoxine — 3 zones",
+          "detail": "[Definitie van zones en inbegrepen nacontrole toevoegen]",
+          "price": "€ —"
+        },
+        {
+          "name": "Consult",
+          "detail": "[Vermeld of en wanneer consultkosten worden verrekend]",
+          "price": "€ —"
+        },
+        {
+          "name": "Huidverbetering",
+          "detail": "[Exacte behandeling en eenheid nog bepalen]",
+          "price": "€ —"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Laten we rustig kennismaken.",
+      "lead": "Heeft u een vraag of wilt u weten of een consult bij u past? Laat uw gegevens achter zodra het formulier is gekoppeld, of gebruik straks de Calendly-knop.",
+      "aside": "Adres, telefoon, e-mail, openingstijden, spoednummer, KvK-gegevens en klachtenfunctionaris moeten vóór publicatie worden ingevuld."
+    },
+    "details": {
+      "eyebrow": "Timmerman Injectables",
+      "title": "In Almere, persoonlijk bereikbaar.",
+      "addressLabel": "Bezoekadres",
+      "address": "Almere — exact adres volgt",
+      "phoneLabel": "Telefoon",
+      "phone": "[Telefoonnummer volgt]",
+      "emailLabel": "E-mail",
+      "email": "[E-mailadres volgt]",
+      "hoursLabel": "Openingstijden",
+      "hours": "[Openingstijden volgen]",
+      "aftercareLabel": "Nazorg / urgente klacht",
+      "aftercare": "[Direct bereikbaar nummer en instructie buiten openingstijden toevoegen]"
+    },
+    "form": {
+      "eyebrow": "Consult aanvragen",
+      "title": "Vertel kort waarover u wilt praten.",
+      "intro": "De verzendfunctie en Calendly-koppeling zijn nog niet actief. Deel via een toekomstig websiteformulier nooit medische gegevens die niet nodig zijn.",
+      "name": "Naam",
+      "email": "E-mailadres",
+      "phone": "Telefoonnummer (optioneel)",
+      "topic": "Onderwerp",
+      "topicDefault": "Kies een onderwerp",
+      "topicConsult": "Consult botulinetoxine",
+      "topicSkin": "Huidverbetering",
+      "topicOther": "Andere vraag",
+      "message": "Bericht",
+      "privacy": "Door te verzenden gaat u akkoord met de privacyverklaring.",
+      "submit": "Aanvraag voorbereiden",
+      "status": "De aanvraag is nog niet verzonden: koppel eerst Calendly of een beveiligde formulierdienst."
+    }
+  },
+  "legal": {
+    "privacy": {
+      "eyebrow": "Juridisch",
+      "title": "Privacyverklaring",
+      "intro": "Conceptversie — laat deze verklaring vóór publicatie juridisch en operationeel controleren en vul alle placeholders in.",
+      "sections": [
+        {
+          "title": "1. Wie is verantwoordelijk?",
+          "paragraphs": [
+            "Timmerman Injectables, gevestigd in Almere, is verantwoordelijk voor de verwerking van persoonsgegevens via deze website. [Juridische naam, adres, KvK-nummer en contactgegevens toevoegen.]"
+          ]
+        },
+        {
+          "title": "2. Welke gegevens verwerken we?",
+          "paragraphs": [
+            "Wanneer het contact- of boekingssysteem wordt geactiveerd, kunnen naam, contactgegevens, afspraakvoorkeur en uw bericht worden verwerkt. Medische gegevens horen alleen via een passend beveiligd zorgproces te worden uitgevraagd.",
+            "[Inventariseer alle werkelijk gebruikte leveranciers, formulieren, hosting, e-mail, Calendly en eventuele analytics.]"
+          ]
+        },
+        {
+          "title": "3. Doelen en grondslagen",
+          "paragraphs": [
+            "Gegevens kunnen worden gebruikt om vragen te beantwoorden, afspraken te plannen, zorg te verlenen, een medisch dossier bij te houden en aan wettelijke verplichtingen te voldoen. Per doel moet de juiste AVG-grondslag door de kliniek worden vastgesteld."
+          ]
+        },
+        {
+          "title": "4. Bewaartermijnen en delen",
+          "paragraphs": [
+            "Gegevens worden niet langer bewaard dan nodig of wettelijk verplicht. [Concrete termijnen per gegevenscategorie toevoegen.] Met verwerkers worden passende afspraken gemaakt en gegevens worden niet verkocht."
+          ]
+        },
+        {
+          "title": "5. Uw rechten",
+          "paragraphs": [
+            "U kunt vragen om inzage, correctie, verwijdering, beperking, overdracht of bezwaar, voor zover de wet dit toestaat. U kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens."
+          ]
+        },
+        {
+          "title": "6. Beveiliging en contact",
+          "paragraphs": [
+            "Timmerman Injectables neemt passende technische en organisatorische maatregelen. [Privacycontact en procedure voor verzoeken toevoegen.]"
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "eyebrow": "Juridisch",
+      "title": "Cookieverklaring",
+      "intro": "Deze eerste versie gebruikt geen tracking-, advertentie- of analysecookies. Daarom is er nu geen toestemmingsbanner nodig.",
+      "sections": [
+        {
+          "title": "Wat gebruikt de website nu?",
+          "paragraphs": [
+            "De website laadt lettertypen van Google Fonts. Afhankelijk van de uiteindelijke hosting en configuratie kan daarbij technische informatie, zoals een IP-adres, aan Google worden doorgegeven. Overweeg de lettertypen lokaal te hosten vóór livegang.",
+            "De taalkeuze wordt in de URL opgenomen en niet in een cookie opgeslagen."
+          ]
+        },
+        {
+          "title": "Toekomstige boekingskoppeling",
+          "paragraphs": [
+            "Wanneer Calendly of een andere externe dienst wordt ingebed, moet vóór activering worden onderzocht welke cookies en persoonsgegevens die dienst verwerkt. Niet-noodzakelijke cookies mogen pas na geldige toestemming worden geladen."
+          ]
+        },
+        {
+          "title": "Wijzigingen",
+          "paragraphs": [
+            "Werk deze verklaring en de toestemmingsinterface bij zodra analytics, video, kaarten, chat, boekingswidgets of andere externe diensten worden toegevoegd."
+          ]
+        }
+      ]
+    },
+    "disclaimer": {
+      "eyebrow": "Medische informatie",
+      "title": "Medische disclaimer",
+      "intro": "Conceptversie — alle medische informatie en noodinstructies moeten vóór publicatie door de behandelend arts worden gecontroleerd.",
+      "sections": [
+        {
+          "title": "Geen persoonlijk medisch advies",
+          "paragraphs": [
+            "De informatie op deze website is algemeen en vervangt geen consult, diagnose of persoonlijk advies van een bevoegde en bekwame arts. Geschiktheid voor een behandeling kan alleen na een medische intake worden beoordeeld."
+          ]
+        },
+        {
+          "title": "Risico’s en resultaten",
+          "paragraphs": [
+            "Cosmetische injectables zijn medische handelingen en niet zonder risico. Effect, duur, herstel en mogelijke bijwerkingen verschillen per persoon. Resultaten kunnen niet worden gegarandeerd."
+          ]
+        },
+        {
+          "title": "Leeftijd en toestemming",
+          "paragraphs": [
+            "Cosmetische behandelingen zonder medische noodzaak zijn in Nederland in beginsel bedoeld voor personen van 18 jaar en ouder. Voor een behandeling is geïnformeerde toestemming nodig."
+          ]
+        },
+        {
+          "title": "Klachten en spoed",
+          "paragraphs": [
+            "Na een behandeling volgt u altijd de persoonlijke nazorginstructies en neemt u bij onverwachte klachten direct contact op via het door de kliniek verstrekte nazorgnummer. Bel bij een levensbedreigende situatie 112. Deze website is geen spoeddienst.",
+            "[Voeg de onafhankelijke klachtenregeling, klachtenfunctionaris en actuele bereikbaarheid toe.]"
+          ]
+        },
+        {
+          "title": "Bronnen voor controle",
+          "paragraphs": [
+            "De conceptinformatie is afgestemd op publieke informatie van de Inspectie Gezondheidszorg en Jeugd, Rijksoverheid, het BIG-register en de Autoriteit Persoonsgegevens. De kliniek blijft verantwoordelijk voor juistheid, actualiteit en naleving."
+          ]
+        }
+      ]
+    }
+  }
+}
