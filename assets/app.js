@@ -236,6 +236,7 @@ function renderDoctor() {
             <h2>${escapeHtml(doctor.story.title)}</h2>
             <p class="lead">${escapeHtml(doctor.story.lead)}</p>
             <p>${escapeHtml(doctor.story.body)}</p>
+            <p><i>${escapeHtml(doctor.story.extra)}</i></p>
           </div>
         </div>
       </section>
