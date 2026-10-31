@@ -95,7 +95,6 @@ function footer() {
             <li><span>${escapeHtml(data.common.footer.addressLabel)}</span>${escapeHtml(data.common.footer.address)}</li>
             <li><span>${escapeHtml(data.common.footer.phoneLabel)}</span>${escapeHtml(data.common.footer.phone)}</li>
             <li><span>${escapeHtml(data.common.footer.emailLabel)}</span>${escapeHtml(data.common.footer.email)}</li>
-            <li><span>${escapeHtml(data.common.footer.hoursLabel)}</span>${escapeHtml(data.common.footer.hours)}</li>
           </ul>
         </div>
       </div>
@@ -180,7 +179,7 @@ function renderHome() {
           </div>
           <div class="hero__visual" aria-hidden="true">
             <div class="hero__arch"></div>
-            <img class="hero__logo" src="/assets/logo-display.png" alt="" width="600" height="680">
+            <img class="hero__logo" src="/assets/logo-subtle.png" alt="" width="600" height="680">
           </div>
         </div>
       </section>
@@ -206,13 +205,6 @@ function renderHome() {
 
       <section class="section section--ivory">
         <div class="container">
-          <div class="section-heading reveal">
-            <div>
-              <p class="eyebrow">${escapeHtml(home.treatments.eyebrow)}</p>
-              <h2>${escapeHtml(home.treatments.title)}</h2>
-            </div>
-            <p class="muted">${escapeHtml(home.treatments.intro)}</p>
-          </div>
           <div class="treatment-grid">
             ${home.treatments.items.map((item, index) => `
               <article class="treatment-card reveal">

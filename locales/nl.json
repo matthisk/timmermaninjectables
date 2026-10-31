@@ -23,7 +23,7 @@
       "navigate": "Navigeren",
       "contact": "Contact",
       "addressLabel": "Adres",
-      "address": "Almere — exact adres volgt",
+      "address": "Guamstraat 20 1339NB, Almere",
       "phoneLabel": "Telefoon",
       "phone": "[Telefoonnummer volgt]",
       "emailLabel": "E-mail",
@@ -93,13 +93,11 @@
       "items": [
         {
           "title": "Botulinetoxine",
-          "text": "Gerichte behandeling waarbij tijdelijke spierontspanning kan worden ingezet voor een zachtere, uitgeruste uitstraling.",
-          "placeholder": true
+          "text": "Gerichte behandeling waarbij tijdelijke spierontspanning kan worden ingezet voor een zachtere, uitgeruste uitstraling."
         },
         {
           "title": "Huidverbetering",
-          "text": "[Exact aanbod, product of techniek en medische informatie nog door de kliniek te bepalen.]",
-          "placeholder": true
+          "text": "[Exact aanbod, product of techniek en medische informatie nog door de kliniek te bepalen.]"
         }
       ]
     },
@@ -359,7 +357,7 @@
       "eyebrow": "Timmerman Injectables",
       "title": "In Almere, persoonlijk bereikbaar.",
       "addressLabel": "Bezoekadres",
-      "address": "Almere — exact adres volgt",
+      "address": "Guamstraat 20 1339NB, Almere",
       "phoneLabel": "Telefoon",
       "phone": "[Telefoonnummer volgt]",
       "emailLabel": "E-mail",
