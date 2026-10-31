@@ -109,8 +109,7 @@ function footer() {
     </footer>`;
 }
 
-function pageHero(content, showPlaceholder = true) {
-  console.log('content', content);
+function pageHero(content, showPlaceholder = false) {
   return `
     <section class="page-hero">
       <div class="container page-hero__grid">
@@ -127,9 +126,9 @@ function pageHero(content, showPlaceholder = true) {
     </section>`;
 }
 
-function ctaBanner() {
+function ctaBanner(ivory = true) {
   return `
-    <section class="section section--ivory">
+    <section class="section ${ivory ? "section--ivory" : ""}">
       <div class="container cta-banner reveal">
         <div>
           <h2>${escapeHtml(data.home.cta.title)}</h2>
@@ -186,9 +185,9 @@ function renderHome() {
 
       <section class="section">
         <div class="container split">
-          <div class="portrait-placeholder reveal">
+          <div class="portrait-placeholder portrait-placeholder--headshot reveal">
             <span class="image-label">${escapeHtml(home.about.photo)}</span>
-            <img src="/assets/logo-display.png" alt="" width="650" height="740">
+            <img src="/assets/headshot.png" alt="" width="650" height="740">
           </div>
           <div class="reveal">
             <p class="eyebrow">${escapeHtml(home.about.eyebrow)}</p>
@@ -218,66 +217,7 @@ function renderHome() {
         </div>
       </section>
 
-      <section class="section section--ink">
-        <div class="container">
-          <div class="section-heading reveal">
-            <div>
-              <p class="eyebrow">${escapeHtml(home.why.eyebrow)}</p>
-              <h2>${escapeHtml(home.why.title)}</h2>
-            </div>
-            <p class="muted">${escapeHtml(home.why.intro)}</p>
-          </div>
-          <div class="why-grid">
-            ${home.why.items.map(item => `
-              <article class="why-card reveal">
-                <span class="why-card__icon">${escapeHtml(item.icon)}</span>
-                <h3>${escapeHtml(item.title)}</h3>
-                <p>${escapeHtml(item.text)}</p>
-                ${item.placeholder ? `<div style="margin-top:16px">${placeholder()}</div>` : ""}
-              </article>`).join("")}
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--ivory">
-        <div class="container before-after">
-          <div class="reveal">
-            <p class="eyebrow">${escapeHtml(home.results.eyebrow)}</p>
-            <h2>${escapeHtml(home.results.title)}</h2>
-            <p class="lead">${escapeHtml(home.results.lead)}</p>
-            ${placeholder()}
-            <p class="small muted" style="margin-top:20px">${escapeHtml(home.results.note)}</p>
-          </div>
-          <div class="before-after__visual reveal" role="img" aria-label="${escapeHtml(home.results.note)}">
-            <div class="result-panel"><span>${escapeHtml(home.results.before)}</span></div>
-            <div class="result-panel"><span>${escapeHtml(home.results.after)}</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--rose">
-        <div class="container">
-          <div class="section-heading reveal">
-            <div>
-              <p class="eyebrow">${escapeHtml(home.reviews.eyebrow)}</p>
-              <h2>${escapeHtml(home.reviews.title)}</h2>
-            </div>
-            <p class="muted">${escapeHtml(home.reviews.intro)}</p>
-          </div>
-          <div class="reviews-grid">
-            ${home.reviews.items.map(item => `
-              <article class="review-card reveal">
-                <div class="review-card__stars" aria-hidden="true">“</div>
-                ${placeholder()}
-                <blockquote>${escapeHtml(item.quote)}</blockquote>
-                <footer><strong>${escapeHtml(item.name)}</strong><br>${escapeHtml(item.label)}</footer>
-              </article>`).join("")}
-          </div>
-        </div>
-      </section>
-
-      ${faqSection()}
-      ${ctaBanner()}
+      ${ctaBanner(true)}
     </main>`;
 }
 
@@ -285,68 +225,21 @@ function renderDoctor() {
   const doctor = data.doctor;
   return `
     <main id="main">
-      ${pageHero(doctor.hero)}
-      <section class="section">
+      <section class="page-hero">
         <div class="container split">
-          <div class="portrait-placeholder reveal">
+          <div class="portrait-placeholder portrait-placeholder--headshot reveal">
             <span class="image-label">${escapeHtml(doctor.story.photo)}</span>
-            <img src="/assets/logo-display.png" alt="" width="650" height="740">
+            <img src="/assets/headshot.png" alt="" width="650" height="740">
           </div>
           <div class="reveal">
             <p class="eyebrow">${escapeHtml(doctor.story.eyebrow)}</p>
             <h2>${escapeHtml(doctor.story.title)}</h2>
             <p class="lead">${escapeHtml(doctor.story.lead)}</p>
             <p>${escapeHtml(doctor.story.body)}</p>
-            ${placeholder()}
           </div>
         </div>
       </section>
-      <section class="section section--ivory">
-        <div class="container">
-          <div class="section-heading reveal">
-            <div><p class="eyebrow">${escapeHtml(doctor.credentials.eyebrow)}</p><h2>${escapeHtml(doctor.credentials.title)}</h2></div>
-            <p class="muted">${escapeHtml(doctor.credentials.intro)}</p>
-          </div>
-          <div class="credentials-grid">
-            ${doctor.credentials.items.map(item => `
-              <article class="credential-card reveal">
-                ${placeholder()}
-                <h3>${escapeHtml(item.title)}</h3>
-                <p>${escapeHtml(item.text)}</p>
-              </article>`).join("")}
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="section-heading reveal">
-            <div><p class="eyebrow">${escapeHtml(doctor.philosophy.eyebrow)}</p><h2>${escapeHtml(doctor.philosophy.title)}</h2></div>
-            <p class="muted">${escapeHtml(doctor.philosophy.lead)}</p>
-          </div>
-          <div class="process-grid">
-            ${doctor.philosophy.steps.map((item, index) => `
-              <article class="process-card reveal">
-                <span class="process-card__number">0${index + 1}</span>
-                <h3>${escapeHtml(item.title)}</h3>
-                <p>${escapeHtml(item.text)}</p>
-              </article>`).join("")}
-          </div>
-        </div>
-      </section>
-      <section class="section section--ivory">
-        <div class="container safety-panel reveal">
-          <div>
-            <p class="eyebrow">${escapeHtml(doctor.safety.eyebrow)}</p>
-            <h2>${escapeHtml(doctor.safety.title)}</h2>
-            ${placeholder()}
-          </div>
-          <div>
-            <p class="lead">${escapeHtml(doctor.safety.intro)}</p>
-            <ul class="safety-list">${doctor.safety.items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
-          </div>
-        </div>
-      </section>
-      ${ctaBanner()}
+      ${ctaBanner(false)}
     </main>`;
 }
 
