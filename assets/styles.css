@@ -812,6 +812,14 @@ h3 {
   color: var(--muted);
 }
 
+.faq__link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--ink);
+  font-weight: 600;
+  text-underline-offset: 0.25em;
+}
+
 .cta-banner {
   display: grid;
   grid-template-columns: 1fr auto;

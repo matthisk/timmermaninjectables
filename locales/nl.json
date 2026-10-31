@@ -162,22 +162,27 @@
     "faq": {
       "eyebrow": "Veelgestelde vragen",
       "title": "Eerst weten, dan beslissen.",
+      "showPlaceholders": false,
       "items": [
         {
-          "q": "Is een consult verplicht vóór een behandeling?",
-          "a": "Een zorgvuldige intake is nodig om uw gezondheid, wensen, mogelijke contra-indicaties, risico’s en verwachtingen te bespreken. [Definitieve werkwijze door de kliniek laten goedkeuren.]"
+          "q": "Wanneer zie ik effect van de botulinetoxinebehandeling?",
+          "a": "Het effect wordt na 3 tot 7 dagen zichtbaar. Na 2 weken is het effect maximaal."
         },
         {
-          "q": "Hoe lang werkt botulinetoxine?",
-          "a": "Het effect is tijdelijk en verschilt per persoon, behandelde zone en dosering. De IGJ noemt als algemene indicatie ongeveer twaalf weken. Uw arts bespreekt wat in uw situatie realistisch is. [Medische tekst laten goedkeuren.]"
+          "q": "Hoelang houdt het effect van botulinetoxine aan?",
+          "a": "Dit verschilt per individu, gemiddeld is dit 3 tot 4 maanden."
         },
         {
-          "q": "Vanaf welke leeftijd kan ik terecht?",
-          "a": "Cosmetische behandelingen zonder medische noodzaak zijn in Nederland in beginsel voor personen van 18 jaar en ouder. Bij twijfel bespreekt u dit met de arts."
+          "q": "Zijn er risico’s aan een behandeling met botulinetoxine?",
+          "a": "Omdat er relatief lage doseringen worden gebruikt bij cosmetische behandelingen is de kans op botulisme-achtige klachten nihil. Daarnaast zal uw arts tijdens het consult vragen naar uw medische voorgeschiedenis om risico’s te bespreken en te beperken. Over het algemeen zijn bijwerkingen mild en genezen vanzelf, zoals een blauwe plek, een lichte zwelling of roodheid ter grootte van een muggenbult op de injectieplaats of hoofdpijn."
         },
         {
-          "q": "Kan ik direct online boeken?",
-          "a": "De Calendly-koppeling wordt later toegevoegd. Tot die tijd kunt u via de contactpagina uw interesse in een consult doorgeven."
+          "q": "Welk merk botulinetoxine wordt er gebruikt?",
+          "a": "Azzalure.",
+          "link": {
+            "label": "Bijsluiter Azzalure (PDF)",
+            "href": "https://www.geneesmiddeleninformatiebank.nl/bijsluiters/h106065.pdf"
+          }
         }
       ]
     },

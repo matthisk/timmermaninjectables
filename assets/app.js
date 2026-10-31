@@ -153,7 +153,8 @@ function faqSection(items = data.home.faq.items) {
               <summary>${escapeHtml(item.q)}</summary>
               <div class="faq__answer">
                 <p>${escapeHtml(item.a)}</p>
-                ${placeholder()}
+                ${item.link ? `<a class="faq__link" href="${escapeHtml(item.link.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.link.label)}</a>` : ""}
+                ${data.home.faq.showPlaceholders === false ? "" : placeholder()}
               </div>
             </details>`).join("")}
         </div>
