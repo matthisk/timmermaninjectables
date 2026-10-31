@@ -73,37 +73,18 @@
   "home": {
     "hero": {
       "eyebrow": "Persoonlijke cosmetische zorg in Almere",
-      "titleBefore": "Subtiele zorg.",
-      "titleAccent": "Uw gezicht,",
-      "titleAfter": "uw verhaal.",
-      "lead": "Een rustige, persoonlijke benadering van botulinetoxine en huidverbetering — met tijd voor uw vragen en een behandelplan dat bij u past.",
-      "noteTitle": "Eén arts, één visie",
-      "note": "Vanaf het eerste gesprek tot de nazorg heeft u één vast aanspreekpunt."
+      "titleBefore": "Uw gezicht,",
+      "titleAccent": "uw verhaal.",
+      "titleAfter": "",
+      "lead": "Uw gezicht vertelt uw verhaal. Lachrimpels, mimiek en karakter maken u uniek. Soms kunnen lijntjes of een vermoeide uitstraling echter sterker aanwezig zijn dan u zou willen. Botulinetoxine-injecties en skinboosters kunnen door lijntjes te verzachten uw huid een frisse en uitgeruste uitstraling te geven."
     },
-    "trust": [
-      {
-        "title": "BIG-registratie",
-        "text": "[Naam en BIG-nummer van de behandelend arts toevoegen]",
-        "placeholder": true
-      },
-      {
-        "title": "Persoonlijk consult",
-        "text": "Vooraf bespreken we wensen, gezondheid, risico’s en realistische verwachtingen.",
-        "placeholder": true
-      },
-      {
-        "title": "Nazorg bereikbaar",
-        "text": "[Nazorgprotocol en bereikbaarheid buiten openingstijden toevoegen]",
-        "placeholder": true
-      }
-    ],
     "about": {
-      "eyebrow": "Over de arts",
-      "title": "Zorg begint met goed luisteren.",
-      "lead": "Timmerman Injectables is een kleinschalige kliniek rondom één behandelend professional. Dat betekent aandacht, continuïteit en een rustig gesprek zonder haast.",
-      "body": "Tijdens het consult kijken we niet alleen naar een behandelzone, maar vooral naar uw wens, mimiek en wat medisch verantwoord is. Een behandeling is nooit vanzelfsprekend; eerlijk adviseren of juist niet behandelen hoort daar ook bij.",
-      "signature": "[Naam behandelend arts]",
-      "photo": "Portret van de arts volgt"
+      "eyebrow": "Uw arts, dr. Timmerman",
+      "title": "",
+      "lead": "",
+      "body": "Met een persoonlijke en zorgvuldige aanpak kijkt Dr. Timmerman met u naar een behandeling die uw natuurlijke schoonheid ondersteunt. Subtiele en natuurlijke resultaten staan daarbij altijd centraal.",
+      "signature": "",
+      "photo": "Nathalie Timmerman"
     },
     "treatments": {
       "eyebrow": "Behandelingen",

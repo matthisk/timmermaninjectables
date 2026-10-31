@@ -76,27 +76,8 @@
       "titleBefore": "Subtle care.",
       "titleAccent": "Your face,",
       "titleAfter": "your story.",
-      "lead": "A calm, personal approach to botulinum toxin and skin improvement — with time for your questions and a plan that suits you.",
-      "noteTitle": "One doctor, one vision",
-      "note": "From your first conversation through aftercare, you have one consistent point of contact."
+      "lead": "A calm, personal approach to botulinum toxin and skin improvement — with time for your questions and a plan that suits you."
     },
-    "trust": [
-      {
-        "title": "BIG registration",
-        "text": "[Add the treating doctor’s name and BIG registration number]",
-        "placeholder": true
-      },
-      {
-        "title": "Personal consultation",
-        "text": "We discuss your wishes, health, risks and realistic expectations beforehand.",
-        "placeholder": true
-      },
-      {
-        "title": "Accessible aftercare",
-        "text": "[Add the aftercare protocol and out-of-hours contact details]",
-        "placeholder": true
-      }
-    ],
     "about": {
       "eyebrow": "About the doctor",
       "title": "Care starts with listening.",

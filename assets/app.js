@@ -111,6 +111,7 @@ function footer() {
 }
 
 function pageHero(content, showPlaceholder = true) {
+  console.log('content', content);
   return `
     <section class="page-hero">
       <div class="container page-hero__grid">
@@ -180,19 +181,7 @@ function renderHome() {
           <div class="hero__visual" aria-hidden="true">
             <div class="hero__arch"></div>
             <img class="hero__logo" src="/assets/logo-display.png" alt="" width="600" height="680">
-            <div class="hero__note"><strong>${escapeHtml(home.hero.noteTitle)}</strong>${escapeHtml(home.hero.note)}</div>
           </div>
-        </div>
-      </section>
-
-      <section class="trust-strip" aria-label="${escapeHtml(home.why.eyebrow)}">
-        <div class="container trust-strip__grid">
-          ${home.trust.map(item => `
-            <article class="trust-item">
-              <strong>${escapeHtml(item.title)}</strong>
-              <span>${escapeHtml(item.text)}</span>
-              ${item.placeholder ? `<br>${placeholder()}` : ""}
-            </article>`).join("")}
         </div>
       </section>
 
@@ -207,7 +196,6 @@ function renderHome() {
             <h2>${escapeHtml(home.about.title)}</h2>
             <p class="lead">${escapeHtml(home.about.lead)}</p>
             <p>${escapeHtml(home.about.body)}</p>
-            ${placeholder()}
             <div class="signature">${escapeHtml(home.about.signature)}</div>
             <div class="actions">
               <a class="text-link" href="${route("doctor")}">${escapeHtml(data.common.readMore)}</a>
@@ -453,12 +441,12 @@ function renderContact() {
             ${placeholder()}
             <ul class="contact-list">
               ${[
-                ["addressLabel", "address"],
-                ["phoneLabel", "phone"],
-                ["emailLabel", "email"],
-                ["hoursLabel", "hours"],
-                ["aftercareLabel", "aftercare"]
-              ].map(([label, value]) => `<li><span>${escapeHtml(contact.details[label])}</span>${escapeHtml(contact.details[value])}</li>`).join("")}
+      ["addressLabel", "address"],
+      ["phoneLabel", "phone"],
+      ["emailLabel", "email"],
+      ["hoursLabel", "hours"],
+      ["aftercareLabel", "aftercare"]
+    ].map(([label, value]) => `<li><span>${escapeHtml(contact.details[label])}</span>${escapeHtml(contact.details[value])}</li>`).join("")}
             </ul>
           </div>
           <form class="contact-form reveal" id="consult-form">
