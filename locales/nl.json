@@ -160,8 +160,8 @@
       ]
     },
     "faq": {
-      "eyebrow": "Veelgestelde vragen",
-      "title": "Eerst weten, dan beslissen.",
+      "eyebrow": "",
+      "title": "Veelgestelde vragen",
       "showPlaceholders": false,
       "items": [
         {
@@ -281,9 +281,9 @@
       ]
     },
     "zones": {
-      "eyebrow": "Behandelzones",
-      "title": "Meest voorkomende behandelzones",
-      "intro": "Tijdens het consult bekijken we welke zones en dosering passen bij uw anatomie, spiersterkte en wensen.",
+      "eyebrow": "",
+      "title": "Behandelzones",
+      "intro": "",
       "items": [
         "Voorhoofdsrimpels",
         "Fronsrimpels",
@@ -292,16 +292,16 @@
     },
     "procedure": {
       "eyebrow": "De behandeling",
-      "title": "Klein in tijd, nauwkeurig in uitvoering.",
+      "title": "",
       "durationLabel": "Behandelduur",
       "duration": "10–20 min",
-      "body": "Met een ultradunne naald wordt een kleine hoeveelheid botulinetoxine in een spier in het gezicht geïnjecteerd. Met speciale spuitjes kan nauwkeurig de juiste hoeveelheid worden gegeven die past bij uw anatomie en de sterkte van uw spieren."
+      "body": "Een behandeling duurt 10 tot 20 minuten. Met een ultradunne naald wordt een kleine hoeveelheid botulinetoxine injectie in een spier in het gezicht geinjecteerd. Met speciale spuitjes kan nauwkeurig de juiste hoeveelheid worden gegeven welke passend is bij uw anatomie en sterkte van uw spieren."
     },
     "aftercare": {
-      "eyebrow": "Na de behandeling",
-      "title": "U kunt uw dagelijkse werkzaamheden direct hervatten.",
-      "intro": "De volgende nazorginstructies zijn belangrijk om het effect te maximaliseren en bijwerkingen te voorkomen.",
-      "notice": "Het is belangrijk dat de ingebrachte botulinetoxine op de juiste plek inwerkt: de plek waar de injectie is gezet.",
+      "eyebrow": "",
+      "title": "Na de behandeling",
+      "intro": "Na de behandeling mag u direct uw dagelijkse werkzaamheden hervatten. De volgende nazorg instructies zijn belangrijk om het effect te maximaliseren en bijwerkingen te voorkomen. Het is belangrijk dat de ingebrachte hoeveelheid botulinetoxine op de juiste plek inwerkt, d.w.z. de plek waar de injectie gezet is.",
+      "notice": "",
       "items": [
         "Niet wrijven of masseren van het behandelde gebied op de dag van de behandeling.",
         "Intensief sporten uitstellen tot de volgende dag.",

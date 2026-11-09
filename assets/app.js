@@ -149,7 +149,7 @@ function faqSection(items = data.home.faq.items) {
         </div>
         <div class="faq-list">
           ${items.map((item, index) => `
-            <details class="faq reveal"${index === 0 ? " open" : ""}>
+            <details class="faq reveal" open>
               <summary>${escapeHtml(item.q)}</summary>
               <div class="faq__answer">
                 <p>${escapeHtml(item.a)}</p>
@@ -281,13 +281,9 @@ function renderTreatments() {
               ${treatments.overview.paragraphs.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join("")}
             </div>
             <p class="treatment-overview__benefits-label">${escapeHtml(treatments.overview.benefitsLabel)}</p>
-            <div class="treatment-benefits">
-              ${treatments.overview.benefits.map((benefit, index) => `
-                <article class="treatment-benefit">
-                  <span>0${index + 1}</span>
-                  <p>${escapeHtml(benefit)}</p>
-                </article>`).join("")}
-            </div>
+            <ul>
+              ${treatments.overview.benefits.map((benefit, index) => `<li>${benefit}</li>`).join("")}
+            </ul>
           </div>
         </div>
       </section>
@@ -331,7 +327,6 @@ function renderTreatments() {
             <p class="eyebrow">${escapeHtml(treatments.aftercare.eyebrow)}</p>
             <h2>${escapeHtml(treatments.aftercare.title)}</h2>
             <p class="lead">${escapeHtml(treatments.aftercare.intro)}</p>
-            <p>${escapeHtml(treatments.aftercare.notice)}</p>
           </div>
           <ol class="treatment-aftercare__list reveal">
             ${treatments.aftercare.items.map((item, index) => `

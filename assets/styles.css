@@ -1231,14 +1231,6 @@ h3 {
   max-width: 600px;
 }
 
-.treatment-aftercare__intro > p:last-child {
-  margin-top: 28px;
-  padding: 20px 22px;
-  border-left: 2px solid var(--sienna);
-  background: var(--sand);
-  font-size: .92rem;
-}
-
 .treatment-aftercare__list {
   margin: 0;
   padding: 0;
