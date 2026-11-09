@@ -276,7 +276,9 @@
       "topicOther": "Andere vraag",
       "message": "Bericht",
       "submit": "Versturen",
-      "status": "De aanvraag is nog niet verzonden: koppel eerst een beveiligde formulierdienst."
+      "statusSending": "Uw bericht wordt verzonden…",
+      "statusSuccess": "Bedankt, uw bericht is verzonden. We nemen zo snel mogelijk contact met u op.",
+      "statusError": "Het verzenden is niet gelukt. Probeer het later opnieuw of neem telefonisch of per e-mail contact op."
     }
   },
   "legal": {

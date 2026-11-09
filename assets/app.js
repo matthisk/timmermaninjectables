@@ -394,9 +394,10 @@ function renderContact() {
                 <option value="other">${escapeHtml(form.topicOther)}</option>
               </select>
             </div>
-            <div class="field"><label for="message">${escapeHtml(form.message)}</label><textarea id="message" name="message"></textarea></div>
+            <div class="field"><label for="message">${escapeHtml(form.message)}</label><textarea id="message" name="message" maxlength="5000"></textarea></div>
+            <div class="form-trap" aria-hidden="true"><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></div>
             <button class="button" type="submit">${escapeHtml(form.submit)}</button>
-            <p class="form-status" id="form-status" role="status" hidden>${escapeHtml(form.status)}</p>
+            <p class="form-status" id="form-status" role="status" tabindex="-1" hidden></p>
           </form>
         </div>
       </section>
@@ -534,11 +535,48 @@ document.addEventListener("keydown", event => {
   }
 });
 
-document.querySelector("#consult-form")?.addEventListener("submit", event => {
+document.querySelector("#consult-form")?.addEventListener("submit", async event => {
   event.preventDefault();
-  const status = document.querySelector("#form-status");
-  status.hidden = false;
-  status.focus?.();
+  const form = event.currentTarget;
+  const strings = data.contact.form;
+  const status = form.querySelector("#form-status");
+  const button = form.querySelector("button[type=submit]");
+  const showStatus = (text, state) => {
+    status.textContent = text;
+    status.dataset.state = state;
+    status.hidden = false;
+  };
+
+  const fields = Object.fromEntries(new FormData(form));
+  const topic = form.elements.topic.selectedOptions[0]?.text || fields.topic;
+  const payload = {
+    ...fields,
+    topic,
+    // Public by design: a Web3Forms key can only deliver to the inbox configured for it.
+    access_key: "99576164-2490-4fef-a4cb-5baf75566ef0",
+    subject: `Contactformulier: ${topic} – ${fields.name}`,
+    from_name: "Website NT clinic",
+    language: locale
+  };
+
+  button.disabled = true;
+  showStatus(strings.statusSending, "pending");
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(payload)
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok || !result.success) throw new Error(result.message || `HTTP ${response.status}`);
+    form.reset();
+    showStatus(strings.statusSuccess, "success");
+  } catch {
+    showStatus(strings.statusError, "error");
+  } finally {
+    button.disabled = false;
+    status.focus();
+  }
 });
 
 const calendlyEmbed = document.querySelector(".calendly-embed");

@@ -276,7 +276,9 @@
       "topicOther": "Other question",
       "message": "Message",
       "submit": "Send",
-      "status": "The request has not been sent: connect a secure form service first."
+      "statusSending": "Sending your message…",
+      "statusSuccess": "Thank you, your message has been sent. We will get back to you as soon as possible.",
+      "statusError": "Your message could not be sent. Please try again later or contact us by phone or email."
     }
   },
   "legal": {
