@@ -48,7 +48,7 @@ function brand() {
   return `
     <a class="brand" href="${route("home")}" aria-label="Timmerman Injectables">
       <img class="brand__mark" src="/assets/logo-display.png" alt="" width="43" height="48">
-      <span class="brand__text">Timmerman Injectables<small>${escapeHtml(data.common.brandSuffix)}</small></span>
+      <span class="brand__text">NT clinic<small>${escapeHtml(data.common.brandSuffix)}</small></span>
     </a>`;
 }
 
@@ -370,50 +370,20 @@ function renderPricing() {
 
 function renderContact() {
   const contact = data.contact;
-  const form = contact.form;
+  const booking = contact.booking;
+  const calendlyUrl = `${booking.url}?embed_type=Inline&embed_domain=${encodeURIComponent(location.hostname)}&hide_gdpr_banner=1`;
   return `
     <main id="main">
       ${pageHero(contact.hero)}
       <section class="section" id="consult">
-        <div class="container contact-grid">
-          <div class="reveal">
-            <p class="eyebrow">${escapeHtml(contact.details.eyebrow)}</p>
-            <h2>${escapeHtml(contact.details.title)}</h2>
-            ${placeholder()}
-            <ul class="contact-list">
-              ${[
-      ["addressLabel", "address"],
-      ["phoneLabel", "phone"],
-      ["emailLabel", "email"],
-      ["hoursLabel", "hours"],
-      ["aftercareLabel", "aftercare"]
-    ].map(([label, value]) => `<li><span>${escapeHtml(contact.details[label])}</span>${escapeHtml(contact.details[value])}</li>`).join("")}
-            </ul>
+        <div class="container">
+          <div class="contact-booking reveal">
+            <p class="eyebrow">${escapeHtml(booking.eyebrow)}</p>
+            <h2>${escapeHtml(booking.title)}</h2>
+            <p class="muted">${escapeHtml(booking.intro)}</p>
+            <iframe class="calendly-embed" src="${escapeHtml(calendlyUrl)}" title="${escapeHtml(booking.iframeTitle)}"></iframe>
+            <p class="small muted">${escapeHtml(booking.fallback)} <a href="${escapeHtml(booking.url)}" target="_blank" rel="noopener">${escapeHtml(booking.fallbackLink)}</a></p>
           </div>
-          <form class="contact-form reveal" id="consult-form">
-            <p class="eyebrow">${escapeHtml(form.eyebrow)}</p>
-            <h2>${escapeHtml(form.title)}</h2>
-            <p class="muted">${escapeHtml(form.intro)}</p>
-            ${placeholder()}
-            <div class="form-row" style="margin-top:30px">
-              <div class="field"><label for="name">${escapeHtml(form.name)}</label><input id="name" name="name" autocomplete="name" required></div>
-              <div class="field"><label for="email">${escapeHtml(form.email)}</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-            </div>
-            <div class="field"><label for="phone">${escapeHtml(form.phone)}</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
-            <div class="field">
-              <label for="topic">${escapeHtml(form.topic)}</label>
-              <select id="topic" name="topic" required>
-                <option value="">${escapeHtml(form.topicDefault)}</option>
-                <option value="consult">${escapeHtml(form.topicConsult)}</option>
-                <option value="skin">${escapeHtml(form.topicSkin)}</option>
-                <option value="other">${escapeHtml(form.topicOther)}</option>
-              </select>
-            </div>
-            <div class="field"><label for="message">${escapeHtml(form.message)}</label><textarea id="message" name="message"></textarea></div>
-            <p class="small muted">${escapeHtml(form.privacy)} <a href="${route("privacy")}">${escapeHtml(data.common.footer.privacy)}</a></p>
-            <button class="button" type="submit">${escapeHtml(form.submit)}</button>
-            <p class="form-status" id="form-status" role="status" hidden>${escapeHtml(form.status)}</p>
-          </form>
         </div>
       </section>
     </main>`;
@@ -550,12 +520,22 @@ document.addEventListener("keydown", event => {
   }
 });
 
-document.querySelector("#consult-form")?.addEventListener("submit", event => {
-  event.preventDefault();
-  const status = document.querySelector("#form-status");
-  status.hidden = false;
-  status.focus?.();
-});
+const calendlyEmbed = document.querySelector(".calendly-embed");
+if (calendlyEmbed) {
+  window.addEventListener("message", event => {
+    if (event.origin !== "https://calendly.com" || event.source !== calendlyEmbed.contentWindow) return;
+    const { event: name, payload } = event.data || {};
+    if (name === "calendly.page_height") {
+      const height = parseFloat(payload?.height);
+      if (height > 0) calendlyEmbed.style.height = `${Math.ceil(height)}px`;
+    } else if (name === "calendly.date_and_time_selected" || name === "calendly.event_scheduled") {
+      if (calendlyEmbed.getBoundingClientRect().top < 0) {
+        const smooth = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+        calendlyEmbed.scrollIntoView({ behavior: smooth ? "smooth" : "auto", block: "start" });
+      }
+    }
+  });
+}
 
 if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
   const observer = new IntersectionObserver(entries => {

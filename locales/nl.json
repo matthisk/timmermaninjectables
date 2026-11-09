@@ -81,7 +81,7 @@
     "about": {
       "eyebrow": "Uw arts, dr. Timmerman",
       "title": "",
-      "lead": "",
+      "lead": "Dr. Nathalie Timmerman, heeft een brede achtergrond in wetenschap en specialistische zorg in het ziekenhuis.",
       "body": "Met een persoonlijke en zorgvuldige aanpak kijkt Dr. Timmerman met u naar een behandeling die uw natuurlijke schoonheid ondersteunt. Subtiele en natuurlijke resultaten staan daarbij altijd centraal.",
       "signature": "",
       "photo": "Nathalie Timmerman"
@@ -372,8 +372,8 @@
     "hero": {
       "eyebrow": "Contact",
       "title": "Laten we rustig kennismaken.",
-      "lead": "Heeft u een vraag of wilt u weten of een consult bij u past? Laat uw gegevens achter zodra het formulier is gekoppeld, of gebruik straks de Calendly-knop.",
-      "aside": "Adres, telefoon, e-mail, openingstijden, spoednummer, KvK-gegevens en klachtenfunctionaris moeten vóór publicatie worden ingevuld."
+      "lead": "Heeft u een vraag of wilt u weten of een consult bij u past? Plan hieronder direct een kennismakingsgesprek in.",
+      "aside": ""
     },
     "details": {
       "eyebrow": "Timmerman Injectables",
@@ -389,22 +389,14 @@
       "aftercareLabel": "Nazorg / urgente klacht",
       "aftercare": "[Direct bereikbaar nummer en instructie buiten openingstijden toevoegen]"
     },
-    "form": {
-      "eyebrow": "Consult aanvragen",
-      "title": "Vertel kort waarover u wilt praten.",
-      "intro": "De verzendfunctie en Calendly-koppeling zijn nog niet actief. Deel via een toekomstig websiteformulier nooit medische gegevens die niet nodig zijn.",
-      "name": "Naam",
-      "email": "E-mailadres",
-      "phone": "Telefoonnummer (optioneel)",
-      "topic": "Onderwerp",
-      "topicDefault": "Kies een onderwerp",
-      "topicConsult": "Consult botulinetoxine",
-      "topicSkin": "Huidverbetering",
-      "topicOther": "Andere vraag",
-      "message": "Bericht",
-      "privacy": "Door te verzenden gaat u akkoord met de privacyverklaring.",
-      "submit": "Aanvraag voorbereiden",
-      "status": "De aanvraag is nog niet verzonden: koppel eerst Calendly of een beveiligde formulierdienst."
+    "booking": {
+      "eyebrow": "Consult inplannen",
+      "title": "Maak een afspraak",
+      "intro": "Selecteer hieronder een datum en tijd. U ontvangt direct een bevestiging per e-mail. Deel bij het inplannen geen medische gegevens die niet nodig zijn.",
+      "iframeTitle": "Afspraak inplannen via Calendly",
+      "fallback": "Wordt de agenda niet geladen?",
+      "fallbackLink": "Open de planner in een nieuw venster",
+      "url": "https://calendly.com/matthiskheimensen/30min"
     }
   },
   "legal": {

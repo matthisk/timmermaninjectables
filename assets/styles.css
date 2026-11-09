@@ -504,7 +504,7 @@ h3 {
   object-fit: contain;
   filter: drop-shadow(0 25px 40px rgba(61, 31, 20, 0.13));
   left: 27px;
-  top: 35px;
+  top: 25px;
 }
 
 .split {
@@ -1317,36 +1317,20 @@ h3 {
   background: var(--sand);
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: minmax(260px, .7fr) minmax(0, 1.3fr);
-  gap: clamp(50px, 9vw, 120px);
-}
-
-.contact-list {
-  margin: 35px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.contact-list li {
-  padding: 18px 0;
-  border-top: 1px solid var(--line);
-}
-
-.contact-list span {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--muted);
-  font-size: .75rem;
-  font-weight: 600;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-.contact-form {
+.contact-booking {
   padding: clamp(30px, 5vw, 58px);
   background: var(--ivory);
+}
+
+.calendly-embed {
+  display: block;
+  width: 100%;
+  min-width: 280px;
+  height: 700px;
+  margin: 30px 0 18px;
+  border: 0;
+  background: var(--ivory-light);
+  scroll-margin-top: 24px;
 }
 
 .form-row {
@@ -1646,8 +1630,7 @@ h3 {
   .treatment-zones__heading,
   .treatment-process__grid,
   .treatment-aftercare__grid,
-  .pricing-wrap,
-  .contact-grid {
+  .pricing-wrap {
     grid-template-columns: 1fr;
   }
 

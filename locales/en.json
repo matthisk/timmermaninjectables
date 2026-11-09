@@ -179,7 +179,7 @@
         },
         {
           "q": "Can I book online now?",
-          "a": "The Calendly integration will be added later. For now, you can register your interest through the contact page."
+          "a": "Yes. You can schedule a consultation directly on the contact page."
         }
       ]
     },
@@ -358,7 +358,7 @@
     "hero": {
       "eyebrow": "Contact",
       "title": "Let’s get acquainted, calmly.",
-      "lead": "Do you have a question or want to know whether a consultation may suit you? Leave your details once the form is connected, or use the future Calendly button.",
+      "lead": "Do you have a question or want to know whether a consultation may suit you? Schedule an introductory meeting directly below.",
       "aside": "Address, phone, email, opening hours, urgent aftercare number, Chamber of Commerce details and complaints officer must be completed before publication."
     },
     "details": {
@@ -375,22 +375,14 @@
       "aftercareLabel": "Aftercare / urgent concern",
       "aftercare": "[Add a direct number and out-of-hours instructions]"
     },
-    "form": {
-      "eyebrow": "Request a consultation",
-      "title": "Tell us briefly what you would like to discuss.",
-      "intro": "The form and Calendly integration are not active yet. Never share medical details through a future website form unless they are necessary.",
-      "name": "Name",
-      "email": "Email address",
-      "phone": "Phone number (optional)",
-      "topic": "Subject",
-      "topicDefault": "Choose a subject",
-      "topicConsult": "Botulinum toxin consultation",
-      "topicSkin": "Skin improvement",
-      "topicOther": "Other question",
-      "message": "Message",
-      "privacy": "By submitting, you agree to the privacy statement.",
-      "submit": "Prepare request",
-      "status": "The request has not been sent: connect Calendly or a secure form service first."
+    "booking": {
+      "eyebrow": "Schedule a consultation",
+      "title": "Choose a time that suits you.",
+      "intro": "Select a date and time below. You will receive a confirmation by email straight away. Please do not share medical details when booking unless they are necessary.",
+      "iframeTitle": "Schedule an appointment via Calendly",
+      "fallback": "Calendar not loading?",
+      "fallbackLink": "Open the scheduler in a new window",
+      "url": "https://calendly.com/matthiskheimensen/30min"
     }
   },
   "legal": {
