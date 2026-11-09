@@ -46,8 +46,8 @@
       "description": "Meet the treating doctor and discover the personal approach of Timmerman Injectables in Almere."
     },
     "treatments": {
-      "title": "Treatments | Timmerman Injectables Almere",
-      "description": "Information about botulinum toxin and skin improvement at Timmerman Injectables in Almere."
+      "title": "Botox treatments | Timmerman Injectables Almere",
+      "description": "Learn how botulinum toxin can soften dynamic wrinkles, which areas are commonly treated and which aftercare matters."
     },
     "pricing": {
       "title": "Pricing | Timmerman Injectables Almere",
@@ -255,50 +255,56 @@
   },
   "treatments": {
     "hero": {
-      "eyebrow": "Treatments",
-      "title": "Targeted treatment, plenty of time.",
-      "lead": "A focused range centred around botulinum toxin. The medical assessment always determines whether and which treatment is appropriate.",
-      "aside": "All medical copy, treatment areas, product names, indications and aftercare information are draft content and require approval by the treating doctor."
+      "eyebrow": "Botox treatments",
+      "title": "A relaxed appearance, while retaining your expression.",
+      "lead": "Botulinum toxin is a muscle relaxant that can soften dynamic wrinkles and give the face a more rested appearance.",
+      "treatmentLink": "How treatment works",
+      "asideLabel": "Personal consultation",
+      "aside": "We take time to understand your wishes and discuss what you can expect from treatment. You then decide whether and which treatment you want."
     },
-    "items": [
-      {
-        "number": "01",
-        "eyebrow": "Botulinum toxin",
-        "title": "Temporary relaxation of specific muscles.",
-        "lead": "Botulinum toxin is a prescription medicine that temporarily reduces signal transmission to treated muscles. Effect and duration vary by person.",
-        "body": "During the consultation, the doctor discusses which expression you want to retain, what result is realistic, potential risks and side effects, and whether there are reasons not to treat.",
-        "zonesTitle": "Possible cosmetic treatment areas",
-        "zones": [
-          "Frown area",
-          "Forehead",
-          "Crow’s feet"
-        ],
-        "note": "This list is indicative and not medical advice. Exact areas, dosage, product, contraindications and aftercare must be established by the clinic."
-      },
-      {
-        "number": "02",
-        "eyebrow": "Skin improvement",
-        "title": "The offering is still being developed.",
-        "lead": "[Only describe the specific skin-improving treatment(s) the doctor will actually offer here.]",
-        "body": "Before publication, add for each treatment: aim, suitability, product or technique, number of sessions, potential risks, contraindications, aftercare, expected downtime and realistic outcomes.",
-        "zonesTitle": "To be confirmed",
-        "zones": [
-          "[Treatment or technique]",
-          "[Suitable skin concern]",
-          "[Expected treatment time]"
-        ],
-        "note": "No specific skin improvement treatment is currently claimed. This area is an explicit content placeholder."
-      }
-    ],
-    "safety": {
-      "eyebrow": "Before you book",
-      "title": "A good consultation is part of treatment.",
-      "intro": "Always discuss your health, pregnancy or breastfeeding, medication, allergies, muscle or nerve disorders, previous treatments and expectations with the doctor. [The full contraindications and instructions require medical approval.]",
+    "overview": {
+      "eyebrow": "What does botulinum toxin do?",
+      "title": "Softens lines caused by movement.",
+      "paragraphs": [
+        "Dynamic wrinkles become visible when muscles contract. On the face, these include smile lines, frown lines and lines created when raising the eyebrows. As we age, dynamic wrinkles can become static wrinkles, making lines permanently visible.",
+        "Botulinum toxin injections soften dynamic wrinkles by partially relaxing the muscles. This creates a relaxed and rested appearance.",
+        "Repeated botulinum toxin treatment can slow the development of deeper lines, also known as static wrinkles. Careful dosing can soften wrinkles and lines while retaining natural facial expression."
+      ],
+      "benefitsLabel": "Botulinum toxin injections",
+      "benefits": [
+        "Soften dynamic wrinkles, creating a rested and relaxed appearance.",
+        "Help prevent the development of deeper lines and static wrinkles."
+      ]
+    },
+    "zones": {
+      "eyebrow": "Treatment areas",
+      "title": "Most commonly treated areas",
+      "intro": "During your consultation, we determine which areas and dosage suit your anatomy, muscle strength and wishes.",
       "items": [
-        "You receive guidance on expected effects and known risks.",
-        "Outcomes are personal and can never be guaranteed.",
-        "You receive written pre- and aftercare instructions.",
-        "You know whom to contact immediately if unexpected symptoms occur."
+        "Forehead lines",
+        "Frown lines",
+        "Crow’s feet"
+      ]
+    },
+    "procedure": {
+      "eyebrow": "The treatment",
+      "title": "Short in duration, precise in execution.",
+      "durationLabel": "Treatment time",
+      "duration": "10–20 min",
+      "body": "Using an ultra-fine needle, a small amount of botulinum toxin is injected into a facial muscle. Special syringes allow the amount to be dosed precisely to suit your anatomy and muscle strength."
+    },
+    "aftercare": {
+      "eyebrow": "After treatment",
+      "title": "You can resume your daily activities straight away.",
+      "intro": "The following aftercare instructions are important to maximise the effect and help prevent side effects.",
+      "notice": "It is important that the botulinum toxin works in the intended place: where the injection was administered.",
+      "items": [
+        "Do not rub or massage the treated area on the day of treatment.",
+        "Postpone intensive exercise until the following day.",
+        "Do not lie flat or keep your head bent forward for long during the first 4 hours after treatment.",
+        "Preferably avoid alcohol for 24 hours.",
+        "Avoid direct sunlight for 24 hours, or protect the skin with SPF 50.",
+        "Avoid saunas and sunbeds for three days."
       ]
     }
   },

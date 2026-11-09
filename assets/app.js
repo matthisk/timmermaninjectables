@@ -170,7 +170,7 @@ function renderHome() {
         <div class="container hero__grid">
           <div class="hero__copy">
             <p class="eyebrow">${escapeHtml(home.hero.eyebrow)}</p>
-            <h1 class="hero__title">${escapeHtml(home.hero.titleBefore)} <em>${escapeHtml(home.hero.titleAccent)}</em> ${escapeHtml(home.hero.titleAfter)}</h1>
+            <h1 class="hero__title">${escapeHtml(home.hero.titleBefore)} <span>${escapeHtml(home.hero.titleAccent)}</span> ${escapeHtml(home.hero.titleAfter)}</h1>
             <p class="lead">${escapeHtml(home.hero.lead)}</p>
             <div class="actions">
               ${button(data.common.book, `${route("contact")}#consult`)}
@@ -203,7 +203,7 @@ function renderHome() {
         </div>
       </section>
 
-      <section class="section section--ivory">
+      <section class="section section--ivory section-home-treatments">
         <div class="container">
           <div class="treatment-grid">
             ${home.treatments.items.map((item, index) => `
@@ -249,36 +249,97 @@ function renderTreatments() {
   const treatments = data.treatments;
   return `
     <main id="main">
-      ${pageHero(treatments.hero)}
-      ${treatments.items.map((item, index) => `
-        <section class="section treatment-detail ${index % 2 ? "section--ivory" : ""}">
-          <div class="container treatment-detail__grid">
-            <div class="reveal">
-              <div class="treatment-detail__index">${escapeHtml(item.number)}</div>
-            </div>
-            <div class="reveal">
-              <p class="eyebrow">${escapeHtml(item.eyebrow)}</p>
-              <h2>${escapeHtml(item.title)}</h2>
-              <p class="lead">${escapeHtml(item.lead)}</p>
-              <p>${escapeHtml(item.body)}</p>
-              ${placeholder()}
-              <h3 style="margin-top:40px">${escapeHtml(item.zonesTitle)}</h3>
-              <div class="zone-grid">${item.zones.map(zone => `<div class="zone">${escapeHtml(zone)}</div>`).join("")}</div>
-              <p class="small muted" style="margin-top:24px">${escapeHtml(item.note)}</p>
+      <section class="treatment-page-hero">
+        <div class="container treatment-page-hero__grid">
+          <div class="treatment-page-hero__copy reveal">
+            <p class="eyebrow">${escapeHtml(treatments.hero.eyebrow)}</p>
+            <h1>${escapeHtml(treatments.hero.title)}</h1>
+            <p class="lead">${escapeHtml(treatments.hero.lead)}</p>
+            <div class="actions">
+              ${button(data.common.book, `${route("contact")}#consult`)}
+              <a class="text-link" href="#behandeling">${escapeHtml(treatments.hero.treatmentLink)}</a>
             </div>
           </div>
-        </section>`).join("")}
-      <section class="section section--ivory">
-        <div class="container safety-panel reveal">
-          <div>
-            <p class="eyebrow">${escapeHtml(treatments.safety.eyebrow)}</p>
-            <h2>${escapeHtml(treatments.safety.title)}</h2>
-            ${placeholder()}
+          <aside class="treatment-page-hero__aside reveal">
+            <span class="treatment-page-hero__number" aria-hidden="true">01</span>
+            <div>
+              <p class="treatment-page-hero__label">${escapeHtml(treatments.hero.asideLabel)}</p>
+              <p>${escapeHtml(treatments.hero.aside)}</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section treatment-overview">
+        <div class="container treatment-overview__grid">
+          <div class="treatment-overview__heading reveal">
+            <p class="eyebrow">${escapeHtml(treatments.overview.eyebrow)}</p>
+            <h2>${escapeHtml(treatments.overview.title)}</h2>
           </div>
-          <div>
-            <p class="lead">${escapeHtml(treatments.safety.intro)}</p>
-            <ul class="safety-list">${treatments.safety.items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+          <div class="treatment-overview__content reveal">
+            <div class="treatment-overview__body">
+              ${treatments.overview.paragraphs.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join("")}
+            </div>
+            <p class="treatment-overview__benefits-label">${escapeHtml(treatments.overview.benefitsLabel)}</p>
+            <div class="treatment-benefits">
+              ${treatments.overview.benefits.map((benefit, index) => `
+                <article class="treatment-benefit">
+                  <span>0${index + 1}</span>
+                  <p>${escapeHtml(benefit)}</p>
+                </article>`).join("")}
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section treatment-zones">
+        <div class="container">
+          <div class="treatment-zones__heading reveal">
+            <div>
+              <p class="eyebrow">${escapeHtml(treatments.zones.eyebrow)}</p>
+              <h2>${escapeHtml(treatments.zones.title)}</h2>
+            </div>
+            <p>${escapeHtml(treatments.zones.intro)}</p>
+          </div>
+          <div class="treatment-zones__grid">
+            ${treatments.zones.items.map((zone, index) => `
+              <article class="treatment-zone reveal">
+                <span>0${index + 1}</span>
+                <h3>${escapeHtml(zone)}</h3>
+              </article>`).join("")}
+          </div>
+        </div>
+      </section>
+
+      <section class="section treatment-process" id="behandeling">
+        <div class="container treatment-process__grid">
+          <div class="treatment-process__time reveal">
+            <p>${escapeHtml(treatments.procedure.durationLabel)}</p>
+            <strong>${escapeHtml(treatments.procedure.duration)}</strong>
+          </div>
+          <div class="treatment-process__content reveal">
+            <p class="eyebrow">${escapeHtml(treatments.procedure.eyebrow)}</p>
+            <h2>${escapeHtml(treatments.procedure.title)}</h2>
+            <p class="lead">${escapeHtml(treatments.procedure.body)}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section treatment-aftercare">
+        <div class="container treatment-aftercare__grid">
+          <div class="treatment-aftercare__intro reveal">
+            <p class="eyebrow">${escapeHtml(treatments.aftercare.eyebrow)}</p>
+            <h2>${escapeHtml(treatments.aftercare.title)}</h2>
+            <p class="lead">${escapeHtml(treatments.aftercare.intro)}</p>
+            <p>${escapeHtml(treatments.aftercare.notice)}</p>
+          </div>
+          <ol class="treatment-aftercare__list reveal">
+            ${treatments.aftercare.items.map((item, index) => `
+              <li>
+                <span>0${index + 1}</span>
+                <p>${escapeHtml(item)}</p>
+              </li>`).join("")}
+          </ol>
         </div>
       </section>
       ${faqSection()}
@@ -290,15 +351,8 @@ function renderPricing() {
   const pricing = data.pricing;
   return `
     <main id="main">
-      ${pageHero(pricing.hero)}
-      <section class="section">
-        <div class="container pricing-wrap">
-          <aside class="price-note reveal">
-            ${placeholder()}
-            <h3 style="margin-top:22px">${escapeHtml(pricing.note.title)}</h3>
-            <p>${escapeHtml(pricing.note.text)}</p>
-            <p class="small">${escapeHtml(pricing.note.extra)}</p>
-          </aside>
+      <section class="section price-section">
+        <div class="container">
           <div class="reveal">
             <table class="price-table">
               <caption>${escapeHtml(pricing.table.caption)}</caption>

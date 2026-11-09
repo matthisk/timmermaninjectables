@@ -46,8 +46,8 @@
       "description": "Maak kennis met de behandelend arts en de persoonlijke werkwijze van Timmerman Injectables in Almere."
     },
     "treatments": {
-      "title": "Behandelingen | Timmerman Injectables Almere",
-      "description": "Informatie over botulinetoxine en huidverbetering bij Timmerman Injectables in Almere."
+      "title": "Botox behandelingen | Timmerman Injectables Almere",
+      "description": "Lees hoe botulinetoxine dynamische rimpels kan verzachten, welke zones vaak worden behandeld en welke nazorg belangrijk is."
     },
     "pricing": {
       "title": "Tarieven | Timmerman Injectables Almere",
@@ -187,8 +187,8 @@
       ]
     },
     "cta": {
-      "title": "Nieuwsgierig?",
-      "text": "Begin met een rustig, persoonlijk consult in Almere. U zit nergens aan vast."
+      "title": "Boek nu een vrijblijvend consult",
+      "text": "In een eerste consult bespreken we uw wensen en kijken we welke behandeling bij uw past. Het eerste consult is kosteloos en geheel vrijblijvend."
     }
   },
   "doctor": {
@@ -259,95 +259,111 @@
   },
   "treatments": {
     "hero": {
-      "eyebrow": "Behandelingen",
-      "title": "Gericht behandelen, ruim de tijd nemen.",
-      "lead": "Een overzichtelijk aanbod met botulinetoxine als focus. De medische intake bepaalt altijd of en welke behandeling passend is.",
-      "aside": "Alle medische teksten, behandelzones, productnamen, indicaties en nazorginformatie zijn conceptcontent en vereisen goedkeuring van de behandelend arts."
+      "eyebrow": "Botox behandelingen",
+      "title": "Een ontspannen uitstraling, met behoud van uw mimiek.",
+      "lead": "Botulinetoxine is een spierontspanner die dynamische rimpels kan verzachten en het gezicht een uitgeruste uitstraling kan geven.",
+      "treatmentLink": "Zo werkt de behandeling",
+      "asideLabel": "Persoonlijk consult",
+      "aside": "We besteden aandacht aan uw wensen en bespreken de verwachtingen van de behandeling. Daarna beslist u zelf of en welke behandeling u wenst."
     },
-    "items": [
-      {
-        "number": "01",
-        "eyebrow": "Botulinetoxine",
-        "title": "Tijdelijke ontspanning van specifieke spieren.",
-        "lead": "Botulinetoxine is een receptplichtig geneesmiddel dat de prikkeloverdracht naar behandelde spieren tijdelijk vermindert. Het effect en de duur verschillen per persoon.",
-        "body": "Tijdens het consult bespreekt de arts welke mimiek u wilt behouden, welk resultaat realistisch is, welke risico’s en bijwerkingen kunnen optreden en of er redenen zijn om niet te behandelen.",
-        "zonesTitle": "Mogelijke cosmetische behandelzones",
-        "zones": [
-          "Fronsgebied",
-          "Voorhoofd",
-          "Kraaienpootjes"
-        ],
-        "note": "Deze lijst is indicatief, geen behandeladvies. Exacte zones, dosering, product, contra-indicaties en nazorg moeten door de kliniek worden vastgesteld."
-      },
-      {
-        "number": "02",
-        "eyebrow": "Huidverbetering",
-        "title": "Aanbod wordt nog uitgewerkt.",
-        "lead": "[Beschrijf hier uitsluitend de specifieke huidverbeterende behandeling(en) die de arts daadwerkelijk gaat aanbieden.]",
-        "body": "Voeg vóór publicatie per behandeling toe: doel, geschiktheid, product of techniek, aantal sessies, mogelijke risico’s, contra-indicaties, nazorg, verwachte hersteltijd en realistische resultaten.",
-        "zonesTitle": "Nog te bevestigen",
-        "zones": [
-          "[Behandeling of techniek]",
-          "[Geschikte huidvraag]",
-          "[Verwachte behandelduur]"
-        ],
-        "note": "Geen huidverbeterende behandeling is op dit moment inhoudelijk geclaimd. Dit onderdeel is een duidelijke contentplaceholder."
-      }
-    ],
-    "safety": {
-      "eyebrow": "Voor u boekt",
-      "title": "Een goed consult hoort bij de behandeling.",
-      "intro": "Bespreek altijd uw gezondheid, zwangerschap of borstvoeding, medicatie, allergieën, spier- of zenuwaandoeningen, eerdere behandelingen en verwachtingen met de arts. [Volledige contra-indicatielijst en instructies door de arts laten goedkeuren.]",
+    "overview": {
+      "eyebrow": "Wat doet botulinetoxine?",
+      "title": "Verzacht lijnen die ontstaan door beweging.",
+      "paragraphs": [
+        "Dynamische rimpels zijn zichtbaar wanneer spieren zich aanspannen. In het gezicht zijn dit bijvoorbeeld lachrimpels, fronsrimpels en lijnen bij het optrekken van de wenkbrauwen. Naarmate we ouder worden, kunnen deze dynamische rimpels overgaan in statische rimpels, waardoor lijntjes permanent zichtbaar blijven.",
+        "Botulinetoxine-injecties verzachten dynamische rimpels doordat de spieren gedeeltelijk ontspannen. Dit zorgt voor een ontspannen en uitgeruste uitstraling in het gezicht.",
+        "Bij herhaaldelijk toedienen van botulinetoxine kan het ontstaan van diepere lijntjes, oftewel statische rimpels, worden geremd. Met zorgvuldige doseringen kunnen rimpels en lijntjes worden verzacht terwijl de mimiek van het gezicht behouden blijft."
+      ],
+      "benefitsLabel": "Botulinetoxine-injecties",
+      "benefits": [
+        "Verzachten dynamische rimpels, waardoor een uitgeruste en ontspannen blik ontstaat.",
+        "Helpen het ontstaan van diepere lijnen en statische rimpels te voorkomen."
+      ]
+    },
+    "zones": {
+      "eyebrow": "Behandelzones",
+      "title": "Meest voorkomende behandelzones",
+      "intro": "Tijdens het consult bekijken we welke zones en dosering passen bij uw anatomie, spiersterkte en wensen.",
       "items": [
-        "U ontvangt uitleg over te verwachten effecten en bekende risico’s.",
-        "Resultaten zijn persoonlijk en kunnen nooit worden gegarandeerd.",
-        "U krijgt schriftelijke voor- en nazorginstructies.",
-        "Bij onverwachte klachten moet duidelijk zijn wie u direct kunt bereiken."
+        "Voorhoofdsrimpels",
+        "Fronsrimpels",
+        "Kraaienpootjes"
+      ]
+    },
+    "procedure": {
+      "eyebrow": "De behandeling",
+      "title": "Klein in tijd, nauwkeurig in uitvoering.",
+      "durationLabel": "Behandelduur",
+      "duration": "10–20 min",
+      "body": "Met een ultradunne naald wordt een kleine hoeveelheid botulinetoxine in een spier in het gezicht geïnjecteerd. Met speciale spuitjes kan nauwkeurig de juiste hoeveelheid worden gegeven die past bij uw anatomie en de sterkte van uw spieren."
+    },
+    "aftercare": {
+      "eyebrow": "Na de behandeling",
+      "title": "U kunt uw dagelijkse werkzaamheden direct hervatten.",
+      "intro": "De volgende nazorginstructies zijn belangrijk om het effect te maximaliseren en bijwerkingen te voorkomen.",
+      "notice": "Het is belangrijk dat de ingebrachte botulinetoxine op de juiste plek inwerkt: de plek waar de injectie is gezet.",
+      "items": [
+        "Niet wrijven of masseren van het behandelde gebied op de dag van de behandeling.",
+        "Intensief sporten uitstellen tot de volgende dag.",
+        "Niet plat liggen en het hoofd niet lang voorovergebogen houden in de eerste 4 uur na de behandeling.",
+        "Bij voorkeur alcohol vermijden gedurende 24 uur.",
+        "Direct zonlicht vermijden gedurende 24 uur, of de huid beschermen met factor 50.",
+        "Drie dagen geen sauna of solarium."
       ]
     }
   },
   "pricing": {
     "hero": {
-      "eyebrow": "Tarieven",
-      "title": "Transparant vóór u beslist.",
-      "lead": "De definitieve prijzen worden later toegevoegd. Tijdens het consult ontvangt u vooraf een helder behandelvoorstel met totale kosten.",
-      "aside": "Alle prijzen, inbegrepen diensten, betaalvoorwaarden en annuleringsvoorwaarden zijn placeholders en moeten door de kliniek worden vastgesteld."
+      "eyebrow": "",
+      "title": "",
+      "lead": "",
+      "aside": ""
     },
     "note": {
-      "title": "Nog niet definitief",
-      "text": "Gebruik deze tabel als invulstructuur. Publiceer pas nadat product, doseringsmodel, btw-behandeling en voorwaarden zijn gecontroleerd.",
-      "extra": "Een consult leidt niet automatisch tot een behandeling."
+      "title": "",
+      "text": "",
+      "extra": ""
     },
     "table": {
-      "caption": "Concept prijslijst",
+      "caption": "Prijslijst",
       "treatment": "Behandeling",
       "detail": "Toelichting",
       "price": "Tarief",
       "rows": [
         {
-          "name": "Botulinetoxine — 1 zone",
-          "detail": "[Definitie van zone en inbegrepen nacontrole toevoegen]",
-          "price": "€ —"
+          "name": "Voorhoofdrimpels",
+          "detail": "",
+          "price": "Vrouw: €120,- Man: €150,-"
         },
         {
-          "name": "Botulinetoxine — 2 zones",
-          "detail": "[Definitie van zones en inbegrepen nacontrole toevoegen]",
-          "price": "€ —"
+          "name": "Fronsrimpels",
+          "detail": "",
+          "price": "Vrouw: €120,- Man: €150,-"
         },
         {
-          "name": "Botulinetoxine — 3 zones",
-          "detail": "[Definitie van zones en inbegrepen nacontrole toevoegen]",
-          "price": "€ —"
+          "name": "Kraaienpootjes",
+          "detail": "",
+          "price": "€120,-"
         },
         {
-          "name": "Consult",
-          "detail": "[Vermeld of en wanneer consultkosten worden verrekend]",
-          "price": "€ —"
+          "name": "Wenkbrauwlift",
+          "detail": "",
+          "price": "€70,-"
         },
         {
-          "name": "Huidverbetering",
-          "detail": "[Exacte behandeling en eenheid nog bepalen]",
-          "price": "€ —"
+          "name": "4 zones",
+          "detail": "voorhoofd-, fronsrimpels, kraaienpootjes, + wenkbrauwlift",
+          "price": "€360,-"
+        },
+        {
+          "name": "Lip flip",
+          "detail": "overactiviteit bovenlip",
+          "price": "€70,-"
+        },
+        {
+          "name": "Kin",
+          "detail": "putjes / sinaasappelhuid",
+          "price": "€70,-"
         }
       ]
     }
