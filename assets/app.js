@@ -319,6 +319,11 @@ function renderTreatments() {
     </main>`;
 }
 
+function priceCell(price) {
+  if (!Array.isArray(price)) return escapeHtml(price);
+  return `<dl class="price-split">${price.map(p => `<div><dt>${escapeHtml(p.label)}</dt><dd>${escapeHtml(p.amount)}</dd></div>`).join("")}</dl>`;
+}
+
 function renderPricing() {
   const pricing = data.pricing;
   return `
@@ -330,7 +335,7 @@ function renderPricing() {
               <caption>${escapeHtml(pricing.table.caption)}</caption>
               <thead><tr><th>${escapeHtml(pricing.table.treatment)}</th><th>${escapeHtml(pricing.table.detail)}</th><th>${escapeHtml(pricing.table.price)}</th></tr></thead>
               <tbody>
-                ${pricing.table.rows.map(item => `<tr><td>${escapeHtml(item.name)}</td><td>${escapeHtml(item.detail)}</td><td>${escapeHtml(item.price)}</td></tr>`).join("")}
+                ${pricing.table.rows.map(item => `<tr><td>${escapeHtml(item.name)}</td><td>${escapeHtml(item.detail)}</td><td>${priceCell(item.price)}</td></tr>`).join("")}
               </tbody>
             </table>
           </div>
@@ -369,16 +374,12 @@ function renderContact() {
       ["addressLabel", "address"],
       ["phoneLabel", "phone"],
       ["emailLabel", "email"],
-      ["hoursLabel", "hours"],
-      ["aftercareLabel", "aftercare"]
     ].map(([label, value]) => `<li><span>${escapeHtml(contact.details[label])}</span>${escapeHtml(contact.details[value])}</li>`).join("")}
             </ul>
           </div>
           <form class="contact-form reveal" id="consult-form">
             <p class="eyebrow">${escapeHtml(form.eyebrow)}</p>
             <h2>${escapeHtml(form.title)}</h2>
-            <p class="muted">${escapeHtml(form.intro)}</p>
-            ${placeholder()}
             <div class="form-row" style="margin-top:30px">
               <div class="field"><label for="name">${escapeHtml(form.name)}</label><input id="name" name="name" autocomplete="name" required></div>
               <div class="field"><label for="email">${escapeHtml(form.email)}</label><input id="email" name="email" type="email" autocomplete="email" required></div>
@@ -394,7 +395,6 @@ function renderContact() {
               </select>
             </div>
             <div class="field"><label for="message">${escapeHtml(form.message)}</label><textarea id="message" name="message"></textarea></div>
-            <p class="small muted">${escapeHtml(form.privacy)} <a href="${route("privacy")}">${escapeHtml(data.common.footer.privacy)}</a></p>
             <button class="button" type="submit">${escapeHtml(form.submit)}</button>
             <p class="form-status" id="form-status" role="status" hidden>${escapeHtml(form.status)}</p>
           </form>

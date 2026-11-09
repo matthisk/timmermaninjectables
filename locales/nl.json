@@ -10,7 +10,6 @@
     "viewTreatments": "Bekijk behandelingen",
     "readMore": "Lees meer",
     "placeholder": "Placeholder — goedkeuring nodig",
-    "photoPlaceholder": "Fotografie-placeholder",
     "nav": {
       "home": "Home",
       "doctor": "Uw arts",
@@ -28,8 +27,6 @@
       "phone": "[Telefoonnummer volgt]",
       "emailLabel": "E-mail",
       "email": "[E-mailadres volgt]",
-      "hoursLabel": "Openingstijden",
-      "hours": "[Openingstijden volgen]",
       "copyright": "© 2026 Timmerman Injectables. Alle rechten voorbehouden.",
       "privacy": "Privacy",
       "cookies": "Cookies",
@@ -87,9 +84,6 @@
       "photo": "Nathalie Timmerman"
     },
     "treatments": {
-      "eyebrow": "Behandelingen",
-      "title": "Klein aanbod, persoonlijke aandacht.",
-      "intro": "De precieze behandeling wordt pas na een medische intake bepaald. Onderstaande informatie is een eerste oriëntatie.",
       "items": [
         {
           "title": "Botulinetoxine",
@@ -98,64 +92,6 @@
         {
           "title": "Huidverbetering",
           "text": "[Exact aanbod, product of techniek en medische informatie nog door de kliniek te bepalen.]"
-        }
-      ]
-    },
-    "why": {
-      "eyebrow": "Waarom Timmerman",
-      "title": "Weloverwogen zorg, dicht bij huis.",
-      "intro": "Een kleinschalige praktijk in Almere waar uitleg en veiligheid net zo belangrijk zijn als het esthetische resultaat.",
-      "items": [
-        {
-          "icon": "01",
-          "title": "Eén vaste arts",
-          "text": "U ziet bij consult, behandeling en nazorg steeds dezelfde professional."
-        },
-        {
-          "icon": "02",
-          "title": "Eerlijk advies",
-          "text": "We bespreken ook wanneer wachten of niet behandelen de beste keuze is."
-        },
-        {
-          "icon": "03",
-          "title": "Rust en aandacht",
-          "text": "Geen lopende band, maar ruimte om vragen en verwachtingen zorgvuldig te bespreken."
-        },
-        {
-          "icon": "04",
-          "title": "Veiligheid voorop",
-          "text": "[Bevoegdheid, protocollen, productkeuze en klachtenregeling laten verifiëren.]",
-          "placeholder": true
-        }
-      ]
-    },
-    "results": {
-      "eyebrow": "Voor & na",
-      "title": "Echte resultaten volgen.",
-      "lead": "Hier komt, na schriftelijke toestemming van cliënten, een selectie van eigen voor-en-nafoto’s met gelijke belichting en een eerlijke toelichting.",
-      "before": "Voor",
-      "after": "Na",
-      "note": "Resultaten verschillen per persoon. De getoonde vlakken zijn uitsluitend beeldplaats­houders en tonen geen behandelresultaat."
-    },
-    "reviews": {
-      "eyebrow": "Ervaringen",
-      "title": "Wat cliënten straks vertellen.",
-      "intro": "Onderstaande teksten zijn bewust als placeholders gemarkeerd. Vervang ze uitsluitend door verifieerbare, goedgekeurde cliëntreviews.",
-      "items": [
-        {
-          "quote": "[Plaats hier een geverifieerde review over de rustige uitleg en persoonlijke benadering.]",
-          "name": "[Voornaam of initialen]",
-          "label": "Geverifieerde review volgt"
-        },
-        {
-          "quote": "[Plaats hier een geverifieerde review over het consult en een realistisch behandeladvies.]",
-          "name": "[Voornaam of initialen]",
-          "label": "Geverifieerde review volgt"
-        },
-        {
-          "quote": "[Plaats hier een geverifieerde review over nazorg en bereikbaarheid.]",
-          "name": "[Voornaam of initialen]",
-          "label": "Geverifieerde review volgt"
         }
       ]
     },
@@ -192,12 +128,6 @@
     }
   },
   "doctor": {
-    "hero": {
-      "eyebrow": "Uw arts",
-      "title": "Eén professional. Eén vertrouwd gezicht.",
-      "lead": "Een persoonlijke kliniek begint bij weten wie er tegenover u zit — en voelen dat er echt naar u wordt geluisterd.",
-      "aside": "De naam, portretfotografie, opleidingen, ervaring, BIG-registratie en eventuele beroepsverenigingen moeten vóór publicatie door de kliniek worden aangeleverd en gecontroleerd."
-    },
     "story": {
       "eyebrow": "",
       "title": "Uw arts.",
@@ -205,66 +135,13 @@
       "body": "Haar interesse in de esthetische geneeskunde is ontstaan vanuit de overtuiging dat goede zorg verder gaat dan het behandelen van ziekte. Zorg draait ook om  preventie, het versterken van zelfvertrouwen en het bevorderen van welzijn. Met haar wetenschappelijke kennis vindt zij het belangrijk dat behandelingen evidence-based zijn. Met een deskundige benadering en oog voor detail stelt zij samen met u een persoonlijk behandelplan op wat aansluit op uw wensen en past bij uw unieke uitstraling. ",
       "extra": "Dr. N. Timmerman, MSc. BIG nummer: 79924985201",
       "photo": "Nathalie Timmerman"
-    },
-    "credentials": {
-      "eyebrow": "Kwalificaties",
-      "title": "Controleerbare deskundigheid.",
-      "intro": "Publiceer uitsluitend actuele, verifieerbare gegevens. Bezoekers moeten een BIG-registratie zelfstandig kunnen controleren.",
-      "items": [
-        {
-          "title": "Opleiding",
-          "text": "[Artsendiploma, relevante vervolgopleidingen en nascholing toevoegen.]"
-        },
-        {
-          "title": "BIG-registratie",
-          "text": "[BIG-nummer en directe link naar het BIG-register toevoegen.]"
-        },
-        {
-          "title": "Ervaring & lidmaatschappen",
-          "text": "[Aantal jaren ervaring, beroepsverenigingen en certificeringen verifiëren.]"
-        }
-      ]
-    },
-    "philosophy": {
-      "eyebrow": "Werkwijze",
-      "title": "Een plan dat begint bij uw vraag.",
-      "lead": "Geen standaardbehandeling, maar een stapsgewijs proces met ruimte om na te denken en vragen te stellen.",
-      "steps": [
-        {
-          "title": "Consult & intake",
-          "text": "We bespreken uw gezondheid, medicatie, eerdere behandelingen, wens en verwachtingen."
-        },
-        {
-          "title": "Persoonlijk advies",
-          "text": "U krijgt uitleg over opties, alternatieven, beperkingen, risico’s, kosten en nazorg."
-        },
-        {
-          "title": "Behandeling & nazorg",
-          "text": "Alleen met uw geïnformeerde toestemming behandelen we volgens het afgesproken plan."
-        }
-      ]
-    },
-    "safety": {
-      "eyebrow": "Veilige cosmetische zorg",
-      "title": "Medische zorg, geen impulsaankoop.",
-      "intro": "Botulinetoxine is een receptplichtig geneesmiddel en injecteren is een voorbehouden handeling. De kliniek moet vóór livegang alle onderstaande procesclaims bevestigen.",
-      "items": [
-        "Uitvoering door een aantoonbaar bevoegde en bekwame arts",
-        "Medische anamnese en informed consent vóór behandeling",
-        "Transparante uitleg over risico’s, alternatieven en realistische resultaten",
-        "Duidelijke instructies voor nazorg, complicaties en bereikbaarheid",
-        "Onafhankelijke klachtenregeling conform de Wkkgz"
-      ]
     }
   },
   "treatments": {
     "hero": {
       "eyebrow": "Botox behandelingen",
       "title": "Een ontspannen uitstraling",
-      "lead": "Botulinetoxine is een spierontspanner die dynamische rimpels kan verzachten en het gezicht een uitgeruste uitstraling kan geven.",
-      "treatmentLink": "Zo werkt de behandeling",
-      "asideLabel": "Persoonlijk consult",
-      "aside": "We besteden aandacht aan uw wensen en bespreken de verwachtingen van de behandeling. Daarna beslist u zelf of en welke behandeling u wenst."
+      "lead": "Botulinetoxine is een spierontspanner die dynamische rimpels kan verzachten en het gezicht een uitgeruste uitstraling kan geven."
     },
     "overview": {
       "eyebrow": "Wat doet botulinetoxine?",
@@ -281,9 +158,7 @@
       ]
     },
     "zones": {
-      "eyebrow": "",
       "title": "Behandelzones",
-      "intro": "",
       "items": [
         "Voorhoofdsrimpels",
         "Fronsrimpels",
@@ -301,7 +176,6 @@
       "eyebrow": "",
       "title": "Na de behandeling",
       "intro": "Na de behandeling mag u direct uw dagelijkse werkzaamheden hervatten. De volgende nazorg instructies zijn belangrijk om het effect te maximaliseren en bijwerkingen te voorkomen. Het is belangrijk dat de ingebrachte hoeveelheid botulinetoxine op de juiste plek inwerkt, d.w.z. de plek waar de injectie gezet is.",
-      "notice": "",
       "items": [
         "Niet wrijven of masseren van het behandelde gebied op de dag van de behandeling.",
         "Intensief sporten uitstellen tot de volgende dag.",
@@ -313,17 +187,6 @@
     }
   },
   "pricing": {
-    "hero": {
-      "eyebrow": "",
-      "title": "",
-      "lead": "",
-      "aside": ""
-    },
-    "note": {
-      "title": "",
-      "text": "",
-      "extra": ""
-    },
     "table": {
       "caption": "Prijslijst",
       "treatment": "Behandeling",
@@ -333,12 +196,18 @@
         {
           "name": "Voorhoofdrimpels",
           "detail": "",
-          "price": "Vrouw: €120,- Man: €150,-"
+          "price": [
+            { "label": "Vrouw", "amount": "€120,-" },
+            { "label": "Man", "amount": "€150,-" }
+          ]
         },
         {
           "name": "Fronsrimpels",
           "detail": "",
-          "price": "Vrouw: €120,- Man: €150,-"
+          "price": [
+            { "label": "Vrouw", "amount": "€120,-" },
+            { "label": "Man", "amount": "€150,-" }
+          ]
         },
         {
           "name": "Kraaienpootjes",
@@ -383,11 +252,7 @@
       "phoneLabel": "Telefoon",
       "phone": "[Telefoonnummer volgt]",
       "emailLabel": "E-mail",
-      "email": "[E-mailadres volgt]",
-      "hoursLabel": "Openingstijden",
-      "hours": "[Openingstijden volgen]",
-      "aftercareLabel": "Nazorg / urgente klacht",
-      "aftercare": "[Direct bereikbaar nummer en instructie buiten openingstijden toevoegen]"
+      "email": "[E-mailadres volgt]"
     },
     "booking": {
       "eyebrow": "Consult inplannen",
@@ -400,8 +265,7 @@
     },
     "form": {
       "eyebrow": "Liever een bericht sturen?",
-      "title": "Vertel kort waarover u wilt praten.",
-      "intro": "De verzendfunctie van dit formulier is nog niet actief. Deel via het formulier nooit medische gegevens die niet nodig zijn.",
+      "title": "Contactformulier",
       "name": "Naam",
       "email": "E-mailadres",
       "phone": "Telefoonnummer (optioneel)",
@@ -411,8 +275,7 @@
       "topicSkin": "Huidverbetering",
       "topicOther": "Andere vraag",
       "message": "Bericht",
-      "privacy": "Door te verzenden gaat u akkoord met de privacyverklaring.",
-      "submit": "Aanvraag voorbereiden",
+      "submit": "Versturen",
       "status": "De aanvraag is nog niet verzonden: koppel eerst een beveiligde formulierdienst."
     }
   },

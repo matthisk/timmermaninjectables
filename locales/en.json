@@ -10,7 +10,6 @@
     "viewTreatments": "View treatments",
     "readMore": "Read more",
     "placeholder": "Placeholder — approval required",
-    "photoPlaceholder": "Photography placeholder",
     "nav": {
       "home": "Home",
       "doctor": "Your doctor",
@@ -19,17 +18,15 @@
       "contact": "Contact"
     },
     "footer": {
-      "intro": "Personal, doctor-led cosmetic care in Almere, with calm guidance and a treatment plan tailored to you.",
+      "intro": "Personal, doctor-led cosmetic care in Almere, with calm guidance and a natural treatment plan.",
       "navigate": "Navigate",
       "contact": "Contact",
       "addressLabel": "Address",
-      "address": "Almere — exact address to follow",
+      "address": "Guamstraat 20 1339NB, Almere",
       "phoneLabel": "Phone",
       "phone": "[Phone number to follow]",
       "emailLabel": "Email",
       "email": "[Email address to follow]",
-      "hoursLabel": "Opening hours",
-      "hours": "[Opening hours to follow]",
       "copyright": "© 2026 Timmerman Injectables. All rights reserved.",
       "privacy": "Privacy",
       "cookies": "Cookies",
@@ -39,7 +36,7 @@
   "meta": {
     "home": {
       "title": "Timmerman Injectables | Botox clinic in Almere",
-      "description": "Personal botulinum toxin consultations and skin improvement in Almere. Calm guidance, doctor-led care and a tailored plan."
+      "description": "Personal botulinum toxin consultations and skin improvement in Almere. Calm guidance, doctor-led care and a tailored treatment plan."
     },
     "doctor": {
       "title": "Your doctor | Timmerman Injectables Almere",
@@ -73,194 +70,78 @@
   "home": {
     "hero": {
       "eyebrow": "Personal cosmetic care in Almere",
-      "titleBefore": "Subtle care.",
-      "titleAccent": "Your face,",
-      "titleAfter": "your story.",
-      "lead": "A calm, personal approach to botulinum toxin and skin improvement — with time for your questions and a plan that suits you."
+      "titleBefore": "Your face,",
+      "titleAccent": "your story.",
+      "titleAfter": "",
+      "lead": "Your face tells your story. Laughter lines, expression and character make you unique. Sometimes, however, fine lines or a tired look can be more prominent than you would like. By softening lines, botulinum toxin injections and skin boosters can give your skin a fresh and rested appearance."
     },
     "about": {
-      "eyebrow": "About the doctor",
-      "title": "Care starts with listening.",
-      "lead": "Timmerman Injectables is a small-scale clinic centred around one treating professional. That means attention, continuity and an unhurried conversation.",
-      "body": "During the consultation, we consider not just one area, but your wishes, facial expression and what is medically responsible. Treatment is never a given; honest advice or choosing not to treat is part of good care.",
-      "signature": "[Name of treating doctor]",
-      "photo": "Doctor portrait to follow"
+      "eyebrow": "Your doctor, Dr. Timmerman",
+      "title": "",
+      "lead": "Dr. Nathalie Timmerman has a broad background in science and specialist hospital care.",
+      "body": "With a personal and careful approach, Dr. Timmerman works with you to find a treatment that supports your natural beauty. Subtle and natural results are always the focus.",
+      "signature": "",
+      "photo": "Nathalie Timmerman"
     },
     "treatments": {
-      "eyebrow": "Treatments",
-      "title": "A focused range, personal attention.",
-      "intro": "The precise treatment is only determined after a medical assessment. The information below is an initial orientation.",
       "items": [
         {
           "title": "Botulinum toxin",
-          "text": "A targeted treatment in which temporary muscle relaxation may be used to create a softer, more rested appearance.",
-          "placeholder": true
+          "text": "A targeted treatment in which temporary muscle relaxation may be used to create a softer, more rested appearance."
         },
         {
           "title": "Skin improvement",
-          "text": "[The exact treatment, product or technique and medical information are still to be determined by the clinic.]",
-          "placeholder": true
-        }
-      ]
-    },
-    "why": {
-      "eyebrow": "Why Timmerman",
-      "title": "Considered care, close to home.",
-      "intro": "A small practice in Almere where guidance and safety matter as much as the aesthetic result.",
-      "items": [
-        {
-          "icon": "01",
-          "title": "One consistent doctor",
-          "text": "You see the same professional for consultation, treatment and aftercare."
-        },
-        {
-          "icon": "02",
-          "title": "Honest advice",
-          "text": "We also discuss when waiting or choosing no treatment is the better option."
-        },
-        {
-          "icon": "03",
-          "title": "Calm and attention",
-          "text": "No conveyor belt: there is room to discuss questions and expectations carefully."
-        },
-        {
-          "icon": "04",
-          "title": "Safety first",
-          "text": "[Verify qualifications, protocols, product selection and complaints procedure.]",
-          "placeholder": true
-        }
-      ]
-    },
-    "results": {
-      "eyebrow": "Before & after",
-      "title": "Real results will follow.",
-      "lead": "With written client consent, this area will feature the clinic’s own before-and-after photography, captured in equal lighting with an honest explanation.",
-      "before": "Before",
-      "after": "After",
-      "note": "Results vary by person. These panels are visual placeholders only and do not show a treatment result."
-    },
-    "reviews": {
-      "eyebrow": "Experiences",
-      "title": "What clients will say.",
-      "intro": "The texts below are deliberately marked as placeholders. Replace them only with verifiable, approved client reviews.",
-      "items": [
-        {
-          "quote": "[Add a verified review about calm guidance and the personal approach here.]",
-          "name": "[First name or initials]",
-          "label": "Verified review to follow"
-        },
-        {
-          "quote": "[Add a verified review about the consultation and realistic treatment advice here.]",
-          "name": "[First name or initials]",
-          "label": "Verified review to follow"
-        },
-        {
-          "quote": "[Add a verified review about aftercare and accessibility here.]",
-          "name": "[First name or initials]",
-          "label": "Verified review to follow"
+          "text": "[The exact treatment, product or technique and medical information are still to be determined by the clinic.]"
         }
       ]
     },
     "faq": {
-      "eyebrow": "Frequently asked questions",
-      "title": "Know first, decide second.",
+      "eyebrow": "",
+      "title": "Frequently asked questions",
+      "showPlaceholders": false,
       "items": [
         {
-          "q": "Is a consultation required before treatment?",
-          "a": "A careful assessment is needed to discuss your health, wishes, possible contraindications, risks and expectations. [Final clinic process requires approval.]"
+          "q": "When will I see the effect of the botulinum toxin treatment?",
+          "a": "The effect becomes visible after 3 to 7 days. The full effect is reached after 2 weeks."
         },
         {
-          "q": "How long does botulinum toxin last?",
-          "a": "The effect is temporary and varies with the person, area and dose. The Dutch Healthcare Inspectorate gives approximately twelve weeks as a general indication. Your doctor will discuss what is realistic for you. [Medical copy requires approval.]"
+          "q": "How long does the effect of botulinum toxin last?",
+          "a": "This varies per person; on average it lasts 3 to 4 months."
         },
         {
-          "q": "What is the minimum age?",
-          "a": "In the Netherlands, cosmetic treatment without medical necessity is generally for people aged 18 and over. Discuss any uncertainty with the doctor."
+          "q": "Are there risks to botulinum toxin treatment?",
+          "a": "Because relatively low doses are used in cosmetic treatments, the chance of botulism-like symptoms is negligible. In addition, your doctor will ask about your medical history during the consultation to discuss and limit any risks. Side effects are generally mild and resolve on their own, such as a bruise, slight swelling or a mosquito-bite-sized redness at the injection site, or a headache."
         },
         {
-          "q": "Can I book online now?",
-          "a": "Yes. You can schedule a consultation directly on the contact page."
+          "q": "Which brand of botulinum toxin is used?",
+          "a": "Azzalure.",
+          "link": {
+            "label": "Azzalure package leaflet (PDF, Dutch)",
+            "href": "https://www.geneesmiddeleninformatiebank.nl/bijsluiters/h106065.pdf"
+          }
         }
       ]
     },
     "cta": {
-      "title": "Curious about what may suit you?",
-      "text": "Start with a calm, personal consultation in Almere. There is no obligation to proceed."
+      "title": "Book a free consultation now",
+      "text": "In an initial consultation, we discuss your wishes and look at which treatment suits you. The first consultation is free of charge and entirely without obligation."
     }
   },
   "doctor": {
-    "hero": {
-      "eyebrow": "Your doctor",
-      "title": "One professional. One trusted face.",
-      "lead": "A personal clinic starts with knowing who is sitting opposite you — and feeling genuinely heard.",
-      "aside": "The name, portrait photography, education, experience, BIG registration and any professional memberships must be supplied and verified before publication."
-    },
     "story": {
-      "eyebrow": "Meet your doctor",
-      "title": "Attention before treatment.",
-      "lead": "[Add the doctor’s personal story here: background, motivation, relevant training and vision for cosmetic care.]",
-      "body": "The proposed positioning is clear: calm guidance, respect for natural expression and treatment only when the expected balance between wishes, outcome and risk is responsible.",
-      "photo": "Final portrait to follow"
-    },
-    "credentials": {
-      "eyebrow": "Qualifications",
-      "title": "Verifiable expertise.",
-      "intro": "Publish current, verifiable details only. Visitors should be able to verify a BIG registration independently.",
-      "items": [
-        {
-          "title": "Education",
-          "text": "[Add medical degree, relevant further education and continuing professional development.]"
-        },
-        {
-          "title": "BIG registration",
-          "text": "[Add the BIG number and a direct link to the BIG register.]"
-        },
-        {
-          "title": "Experience & memberships",
-          "text": "[Verify years of experience, professional associations and certifications.]"
-        }
-      ]
-    },
-    "philosophy": {
-      "eyebrow": "Approach",
-      "title": "A plan that starts with your question.",
-      "lead": "No standard treatment, but a step-by-step process with space to think and ask questions.",
-      "steps": [
-        {
-          "title": "Consultation & assessment",
-          "text": "We discuss your health, medication, previous treatments, wishes and expectations."
-        },
-        {
-          "title": "Personal advice",
-          "text": "You receive an explanation of options, alternatives, limitations, risks, costs and aftercare."
-        },
-        {
-          "title": "Treatment & aftercare",
-          "text": "We only treat according to the agreed plan after your informed consent."
-        }
-      ]
-    },
-    "safety": {
-      "eyebrow": "Safe cosmetic care",
-      "title": "Medical care, not an impulse purchase.",
-      "intro": "Botulinum toxin is a prescription medicine and injecting is a reserved procedure. The clinic must confirm every process claim below before launch.",
-      "items": [
-        "Performed by a demonstrably authorised and competent doctor",
-        "Medical history and informed consent before treatment",
-        "Transparent explanation of risks, alternatives and realistic outcomes",
-        "Clear instructions for aftercare, complications and availability",
-        "Independent complaints procedure under the Dutch Wkkgz"
-      ]
+      "eyebrow": "",
+      "title": "Your doctor.",
+      "lead": "Dr. Nathalie Timmerman has a broad background in science and specialist hospital care. She obtained her medical degree from Utrecht University in 2018 and completed her PhD in 2021. Her scientific work has resulted in 20 publications. She is currently a resident in Anaesthesiology, where she is known for her reliability, precision and personal attention to every patient.",
+      "body": "Her interest in aesthetic medicine stems from the belief that good care goes beyond treating illness. Care is also about prevention, building self-confidence and promoting well-being. Given her scientific background, she considers it important that treatments are evidence-based. With an expert approach and an eye for detail, she works with you to create a personal treatment plan that matches your wishes and suits your unique appearance.",
+      "extra": "Dr. N. Timmerman, MSc. BIG number: 79924985201",
+      "photo": "Nathalie Timmerman"
     }
   },
   "treatments": {
     "hero": {
       "eyebrow": "Botox treatments",
-      "title": "A relaxed appearance, while retaining your expression.",
-      "lead": "Botulinum toxin is a muscle relaxant that can soften dynamic wrinkles and give the face a more rested appearance.",
-      "treatmentLink": "How treatment works",
-      "asideLabel": "Personal consultation",
-      "aside": "We take time to understand your wishes and discuss what you can expect from treatment. You then decide whether and which treatment you want."
+      "title": "A relaxed appearance",
+      "lead": "Botulinum toxin is a muscle relaxant that can soften dynamic wrinkles and give the face a rested appearance."
     },
     "overview": {
       "eyebrow": "What does botulinum toxin do?",
@@ -277,9 +158,7 @@
       ]
     },
     "zones": {
-      "eyebrow": "Treatment areas",
-      "title": "Most commonly treated areas",
-      "intro": "During your consultation, we determine which areas and dosage suit your anatomy, muscle strength and wishes.",
+      "title": "Treatment areas",
       "items": [
         "Forehead lines",
         "Frown lines",
@@ -288,16 +167,15 @@
     },
     "procedure": {
       "eyebrow": "The treatment",
-      "title": "Short in duration, precise in execution.",
+      "title": "",
       "durationLabel": "Treatment time",
       "duration": "10–20 min",
-      "body": "Using an ultra-fine needle, a small amount of botulinum toxin is injected into a facial muscle. Special syringes allow the amount to be dosed precisely to suit your anatomy and muscle strength."
+      "body": "A treatment takes 10 to 20 minutes. Using an ultra-fine needle, a small amount of botulinum toxin is injected into a facial muscle. Special syringes allow the amount to be dosed precisely to suit your anatomy and muscle strength."
     },
     "aftercare": {
-      "eyebrow": "After treatment",
-      "title": "You can resume your daily activities straight away.",
-      "intro": "The following aftercare instructions are important to maximise the effect and help prevent side effects.",
-      "notice": "It is important that the botulinum toxin works in the intended place: where the injection was administered.",
+      "eyebrow": "",
+      "title": "After treatment",
+      "intro": "You can resume your daily activities straight away after treatment. The following aftercare instructions are important to maximise the effect and help prevent side effects. It is important that the botulinum toxin works in the intended place, i.e. where the injection was administered.",
       "items": [
         "Do not rub or massage the treated area on the day of treatment.",
         "Postpone intensive exercise until the following day.",
@@ -309,47 +187,52 @@
     }
   },
   "pricing": {
-    "hero": {
-      "eyebrow": "Pricing",
-      "title": "Transparent before you decide.",
-      "lead": "Final prices will be added later. During your consultation, you will receive a clear treatment proposal with total costs in advance.",
-      "aside": "All prices, included services, payment terms and cancellation terms are placeholders and must be determined by the clinic."
-    },
-    "note": {
-      "title": "Not yet final",
-      "text": "Use this table as an editable structure. Publish only after product, dosage model, VAT treatment and terms have been checked.",
-      "extra": "A consultation does not automatically lead to treatment."
-    },
     "table": {
-      "caption": "Draft price list",
+      "caption": "Price list",
       "treatment": "Treatment",
       "detail": "Details",
       "price": "Price",
       "rows": [
         {
-          "name": "Botulinum toxin — 1 area",
-          "detail": "[Add the definition of an area and included review]",
-          "price": "€ —"
+          "name": "Forehead lines",
+          "detail": "",
+          "price": [
+            { "label": "Women", "amount": "€120" },
+            { "label": "Men", "amount": "€150" }
+          ]
         },
         {
-          "name": "Botulinum toxin — 2 areas",
-          "detail": "[Add the definition of areas and included review]",
-          "price": "€ —"
+          "name": "Frown lines",
+          "detail": "",
+          "price": [
+            { "label": "Women", "amount": "€120" },
+            { "label": "Men", "amount": "€150" }
+          ]
         },
         {
-          "name": "Botulinum toxin — 3 areas",
-          "detail": "[Add the definition of areas and included review]",
-          "price": "€ —"
+          "name": "Crow’s feet",
+          "detail": "",
+          "price": "€120"
         },
         {
-          "name": "Consultation",
-          "detail": "[State whether and when the fee is deducted from treatment]",
-          "price": "€ —"
+          "name": "Brow lift",
+          "detail": "",
+          "price": "€70"
         },
         {
-          "name": "Skin improvement",
-          "detail": "[Exact treatment and unit still to be determined]",
-          "price": "€ —"
+          "name": "4 areas",
+          "detail": "forehead lines, frown lines, crow’s feet + brow lift",
+          "price": "€360"
+        },
+        {
+          "name": "Lip flip",
+          "detail": "overactive upper lip",
+          "price": "€70"
+        },
+        {
+          "name": "Chin",
+          "detail": "dimpling / orange-peel skin",
+          "price": "€70"
         }
       ]
     }
@@ -359,25 +242,21 @@
       "eyebrow": "Contact",
       "title": "Let’s get acquainted, calmly.",
       "lead": "Do you have a question or want to know whether a consultation may suit you? Schedule an introductory meeting directly below.",
-      "aside": "Address, phone, email, opening hours, urgent aftercare number, Chamber of Commerce details and complaints officer must be completed before publication."
+      "aside": ""
     },
     "details": {
       "eyebrow": "Timmerman Injectables",
-      "title": "Personally accessible in Almere.",
+      "title": "Details",
       "addressLabel": "Visiting address",
-      "address": "Almere — exact address to follow",
+      "address": "Guamstraat 20 1339NB, Almere",
       "phoneLabel": "Phone",
       "phone": "[Phone number to follow]",
       "emailLabel": "Email",
-      "email": "[Email address to follow]",
-      "hoursLabel": "Opening hours",
-      "hours": "[Opening hours to follow]",
-      "aftercareLabel": "Aftercare / urgent concern",
-      "aftercare": "[Add a direct number and out-of-hours instructions]"
+      "email": "[Email address to follow]"
     },
     "booking": {
       "eyebrow": "Schedule a consultation",
-      "title": "Choose a time that suits you.",
+      "title": "Make an appointment",
       "intro": "Select a date and time below. You will receive a confirmation by email straight away. Please do not share medical details when booking unless they are necessary.",
       "iframeTitle": "Schedule an appointment via Calendly",
       "fallback": "Calendar not loading?",
@@ -386,8 +265,7 @@
     },
     "form": {
       "eyebrow": "Prefer to send a message?",
-      "title": "Tell us briefly what you would like to discuss.",
-      "intro": "Sending from this form is not active yet. Never share medical details through the form unless they are necessary.",
+      "title": "Contact form",
       "name": "Name",
       "email": "Email address",
       "phone": "Phone number (optional)",
@@ -397,8 +275,7 @@
       "topicSkin": "Skin improvement",
       "topicOther": "Other question",
       "message": "Message",
-      "privacy": "By submitting, you agree to the privacy statement.",
-      "submit": "Prepare request",
+      "submit": "Send",
       "status": "The request has not been sent: connect a secure form service first."
     }
   },
@@ -406,7 +283,7 @@
     "privacy": {
       "eyebrow": "Legal",
       "title": "Privacy statement",
-      "intro": "Draft version — have this statement checked before publication and complete all placeholders.",
+      "intro": "Draft version — have this statement checked legally and operationally before publication and complete all placeholders.",
       "sections": [
         {
           "title": "1. Who is responsible?",
@@ -436,7 +313,7 @@
         {
           "title": "5. Your rights",
           "paragraphs": [
-            "You may request access, correction, deletion, restriction, portability or object where the law allows. You may also complain to the Dutch Data Protection Authority."
+            "You may request access, correction, deletion, restriction, portability or object where the law allows. You may also file a complaint with the Dutch Data Protection Authority."
           ]
         },
         {
@@ -455,7 +332,7 @@
         {
           "title": "What does the website use now?",
           "paragraphs": [
-            "The site loads Google Fonts. Depending on final hosting and configuration, technical information such as an IP address may be sent to Google. Consider self-hosting the fonts before launch.",
+            "The site loads fonts from Google Fonts. Depending on final hosting and configuration, technical information such as an IP address may be sent to Google. Consider self-hosting the fonts before launch.",
             "The language choice is included in the URL and is not stored in a cookie."
           ]
         },
@@ -481,7 +358,7 @@
         {
           "title": "No personal medical advice",
           "paragraphs": [
-            "The information on this website is general and does not replace a consultation, diagnosis or personal advice from an authorised and competent doctor. Suitability can only be assessed after a medical consultation."
+            "The information on this website is general and does not replace a consultation, diagnosis or personal advice from an authorised and competent doctor. Suitability for treatment can only be assessed after a medical assessment."
           ]
         },
         {
@@ -493,7 +370,7 @@
         {
           "title": "Age and consent",
           "paragraphs": [
-            "In the Netherlands, cosmetic treatment without medical necessity is generally intended for people aged 18 and over. Informed consent is required."
+            "In the Netherlands, cosmetic treatment without medical necessity is generally intended for people aged 18 and over. Informed consent is required for treatment."
           ]
         },
         {
@@ -506,7 +383,7 @@
         {
           "title": "Sources for review",
           "paragraphs": [
-            "The draft information is aligned with public guidance from the Dutch Healthcare and Youth Care Inspectorate, the Dutch government, the BIG register and the Dutch Data Protection Authority. The clinic remains responsible for accuracy, currency and compliance."
+            "The draft information is aligned with public guidance from the Dutch Health and Youth Care Inspectorate, the Dutch government, the BIG register and the Dutch Data Protection Authority. The clinic remains responsible for accuracy, currency and compliance."
           ]
         }
       ]

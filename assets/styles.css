@@ -1309,6 +1309,33 @@ h3 {
   white-space: nowrap;
 }
 
+.price-split {
+  display: inline-grid;
+  gap: 2px;
+  margin: 0;
+}
+
+.price-split div {
+  display: grid;
+  grid-template-columns: auto minmax(5.5ch, auto);
+  align-items: baseline;
+  justify-content: end;
+  column-gap: 18px;
+}
+
+.price-split dt {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: .7rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.price-split dd {
+  margin: 0;
+  text-align: right;
+}
+
 .price-note {
   position: sticky;
   top: 30px;
