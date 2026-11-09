@@ -366,6 +366,7 @@ function renderPricing() {
 function renderContact() {
   const contact = data.contact;
   const booking = contact.booking;
+  const form = contact.form;
   const calendlyUrl = `${booking.url}?embed_type=Inline&embed_domain=${encodeURIComponent(location.hostname)}&hide_gdpr_banner=1`;
   return `
     <main id="main">
@@ -379,6 +380,48 @@ function renderContact() {
             <iframe class="calendly-embed" src="${escapeHtml(calendlyUrl)}" title="${escapeHtml(booking.iframeTitle)}"></iframe>
             <p class="small muted">${escapeHtml(booking.fallback)} <a href="${escapeHtml(booking.url)}" target="_blank" rel="noopener">${escapeHtml(booking.fallbackLink)}</a></p>
           </div>
+        </div>
+      </section>
+      <section class="section" id="contact-form">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <p class="eyebrow">${escapeHtml(contact.details.eyebrow)}</p>
+            <h2>${escapeHtml(contact.details.title)}</h2>
+            ${placeholder()}
+            <ul class="contact-list">
+              ${[
+      ["addressLabel", "address"],
+      ["phoneLabel", "phone"],
+      ["emailLabel", "email"],
+      ["hoursLabel", "hours"],
+      ["aftercareLabel", "aftercare"]
+    ].map(([label, value]) => `<li><span>${escapeHtml(contact.details[label])}</span>${escapeHtml(contact.details[value])}</li>`).join("")}
+            </ul>
+          </div>
+          <form class="contact-form reveal" id="consult-form">
+            <p class="eyebrow">${escapeHtml(form.eyebrow)}</p>
+            <h2>${escapeHtml(form.title)}</h2>
+            <p class="muted">${escapeHtml(form.intro)}</p>
+            ${placeholder()}
+            <div class="form-row" style="margin-top:30px">
+              <div class="field"><label for="name">${escapeHtml(form.name)}</label><input id="name" name="name" autocomplete="name" required></div>
+              <div class="field"><label for="email">${escapeHtml(form.email)}</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            </div>
+            <div class="field"><label for="phone">${escapeHtml(form.phone)}</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field">
+              <label for="topic">${escapeHtml(form.topic)}</label>
+              <select id="topic" name="topic" required>
+                <option value="">${escapeHtml(form.topicDefault)}</option>
+                <option value="consult">${escapeHtml(form.topicConsult)}</option>
+                <option value="skin">${escapeHtml(form.topicSkin)}</option>
+                <option value="other">${escapeHtml(form.topicOther)}</option>
+              </select>
+            </div>
+            <div class="field"><label for="message">${escapeHtml(form.message)}</label><textarea id="message" name="message"></textarea></div>
+            <p class="small muted">${escapeHtml(form.privacy)} <a href="${route("privacy")}">${escapeHtml(data.common.footer.privacy)}</a></p>
+            <button class="button" type="submit">${escapeHtml(form.submit)}</button>
+            <p class="form-status" id="form-status" role="status" hidden>${escapeHtml(form.status)}</p>
+          </form>
         </div>
       </section>
     </main>`;
@@ -513,6 +556,13 @@ document.addEventListener("keydown", event => {
     menuToggle?.setAttribute("aria-expanded", "false");
     menuToggle?.focus();
   }
+});
+
+document.querySelector("#consult-form")?.addEventListener("submit", event => {
+  event.preventDefault();
+  const status = document.querySelector("#form-status");
+  status.hidden = false;
+  status.focus?.();
 });
 
 const calendlyEmbed = document.querySelector(".calendly-embed");

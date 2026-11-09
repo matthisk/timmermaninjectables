@@ -397,6 +397,23 @@
       "fallback": "Wordt de agenda niet geladen?",
       "fallbackLink": "Open de planner in een nieuw venster",
       "url": "https://calendly.com/matthiskheimensen/30min"
+    },
+    "form": {
+      "eyebrow": "Liever een bericht sturen?",
+      "title": "Vertel kort waarover u wilt praten.",
+      "intro": "De verzendfunctie van dit formulier is nog niet actief. Deel via het formulier nooit medische gegevens die niet nodig zijn.",
+      "name": "Naam",
+      "email": "E-mailadres",
+      "phone": "Telefoonnummer (optioneel)",
+      "topic": "Onderwerp",
+      "topicDefault": "Kies een onderwerp",
+      "topicConsult": "Consult botulinetoxine",
+      "topicSkin": "Huidverbetering",
+      "topicOther": "Andere vraag",
+      "message": "Bericht",
+      "privacy": "Door te verzenden gaat u akkoord met de privacyverklaring.",
+      "submit": "Aanvraag voorbereiden",
+      "status": "De aanvraag is nog niet verzonden: koppel eerst een beveiligde formulierdienst."
     }
   },
   "legal": {

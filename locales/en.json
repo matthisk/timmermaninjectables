@@ -383,6 +383,23 @@
       "fallback": "Calendar not loading?",
       "fallbackLink": "Open the scheduler in a new window",
       "url": "https://calendly.com/matthiskheimensen/30min"
+    },
+    "form": {
+      "eyebrow": "Prefer to send a message?",
+      "title": "Tell us briefly what you would like to discuss.",
+      "intro": "Sending from this form is not active yet. Never share medical details through the form unless they are necessary.",
+      "name": "Name",
+      "email": "Email address",
+      "phone": "Phone number (optional)",
+      "topic": "Subject",
+      "topicDefault": "Choose a subject",
+      "topicConsult": "Botulinum toxin consultation",
+      "topicSkin": "Skin improvement",
+      "topicOther": "Other question",
+      "message": "Message",
+      "privacy": "By submitting, you agree to the privacy statement.",
+      "submit": "Prepare request",
+      "status": "The request has not been sent: connect a secure form service first."
     }
   },
   "legal": {
