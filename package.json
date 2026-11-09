@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build.mjs"
+    "build": "node build.mjs",
+    "dev": "npx http-server -c-1 -p 8080 .",
+    "check": "node --check assets/app.js"
   }
 }

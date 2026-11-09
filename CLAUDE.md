@@ -1,0 +1,3 @@
+- Page content: `.html` files are empty shells. Each page renders from `render<Page>()` in `assets/app.js`, with all text in `locales/{nl,en}.json`. Edit both locale files together.
+- Head tags (preload, preconnect) live in each `.html` file; update all 16 when changing them.
+- Run locally with `npm run dev` (caching disabled); syntax-check with `npm run check`.
