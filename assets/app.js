@@ -257,16 +257,8 @@ function renderTreatments() {
             <p class="lead">${escapeHtml(treatments.hero.lead)}</p>
             <div class="actions">
               ${button(data.common.book, `${route("contact")}#consult`)}
-              <a class="text-link" href="#behandeling">${escapeHtml(treatments.hero.treatmentLink)}</a>
             </div>
           </div>
-          <aside class="treatment-page-hero__aside reveal">
-            <span class="treatment-page-hero__number" aria-hidden="true">01</span>
-            <div>
-              <p class="treatment-page-hero__label">${escapeHtml(treatments.hero.asideLabel)}</p>
-              <p>${escapeHtml(treatments.hero.aside)}</p>
-            </div>
-          </aside>
         </div>
       </section>
 
@@ -284,25 +276,10 @@ function renderTreatments() {
             <ul>
               ${treatments.overview.benefits.map((benefit, index) => `<li>${benefit}</li>`).join("")}
             </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="section treatment-zones">
-        <div class="container">
-          <div class="treatment-zones__heading reveal">
-            <div>
-              <p class="eyebrow">${escapeHtml(treatments.zones.eyebrow)}</p>
-              <h2>${escapeHtml(treatments.zones.title)}</h2>
-            </div>
-            <p>${escapeHtml(treatments.zones.intro)}</p>
-          </div>
-          <div class="treatment-zones__grid">
-            ${treatments.zones.items.map((zone, index) => `
-              <article class="treatment-zone reveal">
-                <span>0${index + 1}</span>
-                <h3>${escapeHtml(zone)}</h3>
-              </article>`).join("")}
+            <p class="treatment-overview__benefits-label">${escapeHtml(treatments.zones.title)}</p>
+            <ul>
+              ${treatments.zones.items.map((zone, index) => `<li>${zone}</li>`).join("")}
+            </ul>
           </div>
         </div>
       </section>
@@ -387,7 +364,6 @@ function renderContact() {
           <div class="reveal">
             <p class="eyebrow">${escapeHtml(contact.details.eyebrow)}</p>
             <h2>${escapeHtml(contact.details.title)}</h2>
-            ${placeholder()}
             <ul class="contact-list">
               ${[
       ["addressLabel", "address"],
