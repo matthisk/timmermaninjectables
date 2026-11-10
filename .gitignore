@@ -3,3 +3,4 @@ dist/
 *.tar.gz
 .playwright-mcp/
 test-results/
+.wrangler/
