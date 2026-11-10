@@ -27,7 +27,7 @@
       "phone": "[Telefoonnummer volgt]",
       "emailLabel": "E-mail",
       "email": "info@ntclinic.nl",
-      "copyright": "© 2026 Timmerman Injectables. Alle rechten voorbehouden.",
+      "copyright": "© 2026 NT Clinic. Alle rechten voorbehouden.",
       "privacy": "Privacy",
       "cookies": "Cookies",
       "disclaimer": "Medische disclaimer"
@@ -35,36 +35,36 @@
   },
   "meta": {
     "home": {
-      "title": "Timmerman Injectables | Botoxkliniek in Almere",
+      "title": "NT Clinic | Botoxkliniek in Almere",
       "description": "Persoonlijke botulinetoxineconsulten en huidverbetering in Almere. Rustige uitleg, artsgeleide zorg en een behandelplan op maat."
     },
     "doctor": {
-      "title": "Uw arts | Timmerman Injectables Almere",
-      "description": "Maak kennis met de behandelend arts en de persoonlijke werkwijze van Timmerman Injectables in Almere."
+      "title": "Uw arts | NT Clinic Almere",
+      "description": "Maak kennis met de behandelend arts en de persoonlijke werkwijze van NT Clinic in Almere."
     },
     "treatments": {
-      "title": "Botox behandelingen | Timmerman Injectables Almere",
+      "title": "Botox behandelingen | NT Clinic Almere",
       "description": "Lees hoe botulinetoxine dynamische rimpels kan verzachten, welke zones vaak worden behandeld en welke nazorg belangrijk is."
     },
     "pricing": {
-      "title": "Tarieven | Timmerman Injectables Almere",
+      "title": "Tarieven | NT Clinic Almere",
       "description": "Bekijk de tariefstructuur voor botulinetoxine en huidverbetering. Definitieve prijzen volgen."
     },
     "contact": {
-      "title": "Contact en consult | Timmerman Injectables Almere",
-      "description": "Neem contact op met Timmerman Injectables in Almere of vraag een persoonlijk consult aan."
+      "title": "Contact en consult | NT Clinic Almere",
+      "description": "Neem contact op met NT Clinic in Almere of vraag een persoonlijk consult aan."
     },
     "privacy": {
-      "title": "Privacyverklaring | Timmerman Injectables",
-      "description": "Lees hoe Timmerman Injectables omgaat met persoonsgegevens."
+      "title": "Privacyverklaring | NT Clinic",
+      "description": "Lees hoe NT Clinic omgaat met persoonsgegevens."
     },
     "cookies": {
-      "title": "Cookieverklaring | Timmerman Injectables",
+      "title": "Cookieverklaring | NT Clinic",
       "description": "Lees welke cookies en lokale opslag deze website gebruikt."
     },
     "disclaimer": {
-      "title": "Medische disclaimer | Timmerman Injectables",
-      "description": "Belangrijke informatie over de medische content op de website van Timmerman Injectables."
+      "title": "Medische disclaimer | NT Clinic",
+      "description": "Belangrijke informatie over de medische content op de website van NT Clinic."
     }
   },
   "home": {
@@ -245,7 +245,7 @@
       "aside": ""
     },
     "details": {
-      "eyebrow": "Timmerman Injectables",
+      "eyebrow": "NT Clinic",
       "title": "Gegevens",
       "addressLabel": "Bezoekadres",
       "address": "Guamstraat 20 1339NB, Almere",
@@ -290,7 +290,7 @@
         {
           "title": "1. Wie is verantwoordelijk?",
           "paragraphs": [
-            "Timmerman Injectables, gevestigd in Almere, is verantwoordelijk voor de verwerking van persoonsgegevens via deze website. [Juridische naam, adres, KvK-nummer en contactgegevens toevoegen.]"
+            "NT Clinic, gevestigd in Almere, is verantwoordelijk voor de verwerking van persoonsgegevens via deze website. [Juridische naam, adres, KvK-nummer en contactgegevens toevoegen.]"
           ]
         },
         {
@@ -321,7 +321,7 @@
         {
           "title": "6. Beveiliging en contact",
           "paragraphs": [
-            "Timmerman Injectables neemt passende technische en organisatorische maatregelen. [Privacycontact en procedure voor verzoeken toevoegen.]"
+            "NT Clinic neemt passende technische en organisatorische maatregelen. [Privacycontact en procedure voor verzoeken toevoegen.]"
           ]
         }
       ]

@@ -27,7 +27,7 @@
       "phone": "[Phone number to follow]",
       "emailLabel": "Email",
       "email": "info@ntclinic.nl",
-      "copyright": "© 2026 Timmerman Injectables. All rights reserved.",
+      "copyright": "© 2026 NT Clinic. All rights reserved.",
       "privacy": "Privacy",
       "cookies": "Cookies",
       "disclaimer": "Medical disclaimer"
@@ -35,36 +35,36 @@
   },
   "meta": {
     "home": {
-      "title": "Timmerman Injectables | Botox clinic in Almere",
+      "title": "NT Clinic | Botox clinic in Almere",
       "description": "Personal botulinum toxin consultations and skin improvement in Almere. Calm guidance, doctor-led care and a tailored treatment plan."
     },
     "doctor": {
-      "title": "Your doctor | Timmerman Injectables Almere",
-      "description": "Meet the treating doctor and discover the personal approach of Timmerman Injectables in Almere."
+      "title": "Your doctor | NT Clinic Almere",
+      "description": "Meet the treating doctor and discover the personal approach of NT Clinic in Almere."
     },
     "treatments": {
-      "title": "Botox treatments | Timmerman Injectables Almere",
+      "title": "Botox treatments | NT Clinic Almere",
       "description": "Learn how botulinum toxin can soften dynamic wrinkles, which areas are commonly treated and which aftercare matters."
     },
     "pricing": {
-      "title": "Pricing | Timmerman Injectables Almere",
+      "title": "Pricing | NT Clinic Almere",
       "description": "View the pricing structure for botulinum toxin and skin improvement. Final prices will follow."
     },
     "contact": {
-      "title": "Contact and consultation | Timmerman Injectables Almere",
-      "description": "Contact Timmerman Injectables in Almere or request a personal consultation."
+      "title": "Contact and consultation | NT Clinic Almere",
+      "description": "Contact NT Clinic in Almere or request a personal consultation."
     },
     "privacy": {
-      "title": "Privacy statement | Timmerman Injectables",
-      "description": "Read how Timmerman Injectables handles personal data."
+      "title": "Privacy statement | NT Clinic",
+      "description": "Read how NT Clinic handles personal data."
     },
     "cookies": {
-      "title": "Cookie statement | Timmerman Injectables",
+      "title": "Cookie statement | NT Clinic",
       "description": "Read which cookies and local storage this website uses."
     },
     "disclaimer": {
-      "title": "Medical disclaimer | Timmerman Injectables",
-      "description": "Important information about medical content on the Timmerman Injectables website."
+      "title": "Medical disclaimer | NT Clinic",
+      "description": "Important information about medical content on the NT Clinic website."
     }
   },
   "home": {
@@ -245,7 +245,7 @@
       "aside": ""
     },
     "details": {
-      "eyebrow": "Timmerman Injectables",
+      "eyebrow": "NT Clinic",
       "title": "Details",
       "addressLabel": "Visiting address",
       "address": "Guamstraat 20 1339NB, Almere",
@@ -290,7 +290,7 @@
         {
           "title": "1. Who is responsible?",
           "paragraphs": [
-            "Timmerman Injectables, based in Almere, is responsible for processing personal data through this website. [Add legal name, address, Chamber of Commerce number and contact details.]"
+            "NT Clinic, based in Almere, is responsible for processing personal data through this website. [Add legal name, address, Chamber of Commerce number and contact details.]"
           ]
         },
         {
@@ -321,7 +321,7 @@
         {
           "title": "6. Security and contact",
           "paragraphs": [
-            "Timmerman Injectables takes appropriate technical and organisational measures. [Add privacy contact and request procedure.]"
+            "NT Clinic takes appropriate technical and organisational measures. [Add privacy contact and request procedure.]"
           ]
         }
       ]

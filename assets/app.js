@@ -46,7 +46,7 @@ const button = (label, href, variant = "") =>
 
 function brand() {
   return `
-    <a class="brand" href="${route("home")}" aria-label="Timmerman Injectables">
+    <a class="brand" href="${route("home")}" aria-label="NT Clinic">
       <img class="brand__mark" src="/assets/logo-display.png" alt="" width="43" height="48">
       <span class="brand__text">NT clinic<small>${escapeHtml(data.common.brandSuffix)}</small></span>
     </a>`;
@@ -465,7 +465,7 @@ function setMeta() {
   setMetaTag('meta[property="og:image"]', { property: "og:image", content: socialImageUrl });
   setMetaTag('meta[property="og:image:width"]', { property: "og:image:width", content: "1731" });
   setMetaTag('meta[property="og:image:height"]', { property: "og:image:height", content: "909" });
-  setMetaTag('meta[property="og:image:alt"]', { property: "og:image:alt", content: "Timmerman Injectables — Persoonlijke cosmetische zorg in Almere" });
+  setMetaTag('meta[property="og:image:alt"]', { property: "og:image:alt", content: "NT Clinic — Persoonlijke cosmetische zorg in Almere" });
   setMetaTag('meta[name="twitter:image"]', { name: "twitter:image", content: socialImageUrl });
 
   let canonical = document.head.querySelector('link[rel="canonical"]');
@@ -492,7 +492,7 @@ function setMeta() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "name": "Timmerman Injectables",
+    "name": "NT Clinic",
     "url": new URL(route("home"), location.origin).href,
     "description": data.meta.home.description,
     "address": {
