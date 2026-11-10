@@ -1,0 +1,8 @@
+name = "nt-clinic"
+compatibility_date = "2026-11-10"
+pages_build_output_dir = "./dist/client"
+
+[vars]
+# Read by build.mjs at build time (Pages does not expose [vars] to the build step).
+# Used for canonical/og/hreflang URLs and the Calendly embed domain.
+SITE_URL = "https://ntclinic.nl"

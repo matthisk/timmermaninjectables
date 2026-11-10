@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "dev": "npx http-server -c-1 -p 8080 .",
-    "check": "node --check assets/app.js"
+    "dev": "node --watch-path=src --watch-path=assets --watch-path=locales build.mjs & npx http-server -c-1 -p 8080 dist/client",
+    "check": "node --check assets/app.js && node --check src/render.js && node --check build.mjs"
   }
 }
