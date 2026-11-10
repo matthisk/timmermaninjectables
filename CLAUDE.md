@@ -1,5 +1,5 @@
 - Pages are prerendered at build time: `build.mjs` calls `renderPage()` in `src/render.js` for every page × locale and writes full HTML to `dist/client`. All text lives in `locales/{nl,en}.json`; edit both locale files together.
 - Head tags (meta, preload, preconnect) live in `head()` in `src/render.js` — one place for all pages.
 - `assets/app.js` is client-side enhancement only (menu, contact form, Calendly resize, reveal). Strings it needs are passed via `data-*` attributes in the rendered HTML, not by fetching the locale JSON.
-- Canonical/og URLs use `SITE_URL` from `[vars]` in `wrangler.toml` (read by `build.mjs`; an env var overrides it). Pages build output dir is also set there.
+- Canonical/og URLs use `SITE_URL` from `[vars]` in `wrangler.toml` (read by `build.mjs`; an env var overrides it). Worker entry (`main`) and `[assets]` dir are also set there; deployed with `wrangler deploy`.
 - Run locally with `npm run dev` (rebuilds on change, serves `dist/client` with caching disabled); syntax-check with `npm run check`.
