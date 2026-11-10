@@ -69,10 +69,48 @@ document.querySelector("#consult-form")?.addEventListener("submit", async event 
   }
 });
 
-const calendlyEmbed = document.querySelector(".calendly-embed");
-if (calendlyEmbed) {
+// Calendly sets its own cookies, so the iframe is only created after the visitor consents.
+// The consent itself is remembered in localStorage (strictly necessary, so no banner needed)
+// and can be withdrawn with the revoke button shown under the embed.
+const calendly = document.querySelector(".calendly");
+if (calendly) {
+  const CONSENT_KEY = "calendly-consent";
+  const consent = calendly.querySelector(".calendly-consent");
+  const revoke = calendly.querySelector(".calendly-revoke");
+  let calendlyEmbed = null;
+  // Storage can throw (disabled cookies, some private modes); then consent lasts for this page view only.
+  const storage = {
+    get: () => { try { return localStorage.getItem(CONSENT_KEY) === "granted"; } catch { return false; } },
+    set: value => { try { value ? localStorage.setItem(CONSENT_KEY, "granted") : localStorage.removeItem(CONSENT_KEY); } catch {} }
+  };
+
+  const showEmbed = ({ focus }) => {
+    calendlyEmbed = document.createElement("iframe");
+    calendlyEmbed.className = "calendly-embed";
+    calendlyEmbed.src = calendly.dataset.src;
+    calendlyEmbed.title = calendly.dataset.title;
+    consent.hidden = true;
+    consent.after(calendlyEmbed);
+    revoke.hidden = false;
+    if (focus) calendlyEmbed.focus();
+  };
+
+  consent.querySelector(".calendly-accept").addEventListener("click", () => {
+    storage.set(true);
+    showEmbed({ focus: true });
+  });
+
+  revoke.querySelector("button").addEventListener("click", () => {
+    storage.set(false);
+    calendlyEmbed?.remove();
+    calendlyEmbed = null;
+    revoke.hidden = true;
+    consent.hidden = false;
+    consent.querySelector(".calendly-accept").focus();
+  });
+
   window.addEventListener("message", event => {
-    if (event.origin !== "https://calendly.com" || event.source !== calendlyEmbed.contentWindow) return;
+    if (!calendlyEmbed || event.origin !== "https://calendly.com" || event.source !== calendlyEmbed.contentWindow) return;
     const { event: name, payload } = event.data || {};
     if (name === "calendly.page_height") {
       const height = parseFloat(payload?.height);
@@ -84,6 +122,8 @@ if (calendlyEmbed) {
       }
     }
   });
+
+  if (storage.get()) showEmbed({ focus: false });
 }
 
 if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {

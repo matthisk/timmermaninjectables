@@ -11,8 +11,7 @@ export const routes = {
     pricing: "/tarieven.html",
     contact: "/contact.html",
     privacy: "/privacy.html",
-    cookies: "/cookies.html",
-    disclaimer: "/medische-disclaimer.html"
+    cookies: "/cookies.html"
   },
   en: {
     home: "/en/",
@@ -21,8 +20,7 @@ export const routes = {
     pricing: "/en/pricing.html",
     contact: "/en/contact.html",
     privacy: "/en/privacy.html",
-    cookies: "/en/cookies.html",
-    disclaimer: "/en/medical-disclaimer.html"
+    cookies: "/en/cookies.html"
   }
 };
 
@@ -104,7 +102,6 @@ export function renderPage({ data, locale, page, siteUrl }) {
         <div class="footer-legal">
           <a href="${route("privacy")}">${escapeHtml(data.common.footer.privacy)}</a>
           <a href="${route("cookies")}">${escapeHtml(data.common.footer.cookies)}</a>
-          <a href="${route("disclaimer")}">${escapeHtml(data.common.footer.disclaimer)}</a>
         </div>
       </div>
     </footer>`;
@@ -360,7 +357,13 @@ export function renderPage({ data, locale, page, siteUrl }) {
             <p class="eyebrow">${escapeHtml(booking.eyebrow)}</p>
             <h2>${escapeHtml(booking.title)}</h2>
             <p class="muted">${escapeHtml(booking.intro)}</p>
-            <iframe class="calendly-embed" src="${escapeHtml(calendlyUrl)}" title="${escapeHtml(booking.iframeTitle)}"></iframe>
+            <div class="calendly" data-src="${escapeHtml(calendlyUrl)}" data-title="${escapeHtml(booking.iframeTitle)}">
+              <div class="calendly-consent">
+                <p>${escapeHtml(booking.consent.text)} <a href="${route("cookies")}">${escapeHtml(booking.consent.policyLink)}</a></p>
+                <button type="button" class="button calendly-accept">${escapeHtml(booking.consent.button)}</button>
+              </div>
+              <p class="small muted calendly-revoke" hidden>${escapeHtml(booking.consent.remembered)} <button type="button" class="link-button">${escapeHtml(booking.consent.revoke)}</button></p>
+            </div>
             <p class="small muted">${escapeHtml(booking.fallback)} <a href="${escapeHtml(booking.url)}" target="_blank" rel="noopener">${escapeHtml(booking.fallbackLink)}</a></p>
           </div>
         </div>
@@ -372,10 +375,10 @@ export function renderPage({ data, locale, page, siteUrl }) {
             <h2>${escapeHtml(contact.details.title)}</h2>
             <ul class="contact-list">
               ${[
-      ["addressLabel", "address"],
-      ["phoneLabel", "phone"],
-      ["emailLabel", "email"],
-    ].map(([label, value]) => `<li><span>${escapeHtml(contact.details[label])}</span>${escapeHtml(contact.details[value])}</li>`).join("")}
+        ["addressLabel", "address"],
+        ["phoneLabel", "phone"],
+        ["emailLabel", "email"],
+      ].map(([label, value]) => `<li><span>${escapeHtml(contact.details[label])}</span>${escapeHtml(contact.details[value])}</li>`).join("")}
             </ul>
           </div>
           <form class="contact-form reveal" id="consult-form" data-status-sending="${escapeHtml(form.statusSending)}" data-status-success="${escapeHtml(form.statusSuccess)}" data-status-error="${escapeHtml(form.statusError)}">
@@ -413,10 +416,7 @@ export function renderPage({ data, locale, page, siteUrl }) {
         <div class="container legal">
           <p class="eyebrow">${escapeHtml(content.eyebrow)}</p>
           <h1>${escapeHtml(content.title)}</h1>
-          <div class="legal-note">${placeholder()}<p style="margin:14px 0 0">${escapeHtml(content.intro)}</p></div>
         </div>
-      </section>
-      <section class="section section--ivory">
         <div class="container legal">
           ${content.sections.map(section => `
             <section class="reveal">
@@ -435,8 +435,7 @@ export function renderPage({ data, locale, page, siteUrl }) {
     pricing: renderPricing,
     contact: renderContact,
     privacy: () => renderLegal("privacy"),
-    cookies: () => renderLegal("cookies"),
-    disclaimer: () => renderLegal("disclaimer")
+    cookies: () => renderLegal("cookies")
   };
 
   function head() {
@@ -483,13 +482,9 @@ export function renderPage({ data, locale, page, siteUrl }) {
       metaName("twitter:image", socialImageUrl),
       `<link rel="canonical" href="${canonicalUrl}">`,
       ...locales.map(language => `<link rel="alternate" hreflang="${language}" href="${absolute(routes[language][page])}">`),
-      `<link rel="preconnect" href="https://fonts.googleapis.com">`,
-      `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>`,
-      `<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">`,
-      ...(page === "contact" ? [
-        `<link rel="preconnect" href="https://calendly.com">`,
-        `<link rel="preconnect" href="https://assets.calendly.com" crossorigin>`
-      ] : []),
+      // Self-hosted fonts (see @font-face in styles.css); no third-party requests on page load.
+      `<link rel="preload" href="/assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>`,
+      `<link rel="preload" href="/assets/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>`,
       `<link rel="icon" type="image/png" href="/assets/favicon.png">`,
       `<link rel="icon" href="/favicon.ico">`,
       `<link rel="stylesheet" href="/assets/styles.css">`,

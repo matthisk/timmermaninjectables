@@ -29,8 +29,7 @@
       "email": "info@ntclinic.nl",
       "copyright": "© 2026 NT Clinic. All rights reserved.",
       "privacy": "Privacy",
-      "cookies": "Cookies",
-      "disclaimer": "Medical disclaimer"
+      "cookies": "Cookies"
     }
   },
   "meta": {
@@ -61,10 +60,6 @@
     "cookies": {
       "title": "Cookie statement | NT Clinic",
       "description": "Read which cookies and local storage this website uses."
-    },
-    "disclaimer": {
-      "title": "Medical disclaimer | NT Clinic",
-      "description": "Important information about medical content on the NT Clinic website."
     }
   },
   "home": {
@@ -197,16 +192,28 @@
           "name": "Forehead lines",
           "detail": "",
           "price": [
-            { "label": "Women", "amount": "€120" },
-            { "label": "Men", "amount": "€150" }
+            {
+              "label": "Women",
+              "amount": "€120"
+            },
+            {
+              "label": "Men",
+              "amount": "€150"
+            }
           ]
         },
         {
           "name": "Frown lines",
           "detail": "",
           "price": [
-            { "label": "Women", "amount": "€120" },
-            { "label": "Men", "amount": "€150" }
+            {
+              "label": "Women",
+              "amount": "€120"
+            },
+            {
+              "label": "Men",
+              "amount": "€150"
+            }
           ]
         },
         {
@@ -257,11 +264,18 @@
     "booking": {
       "eyebrow": "Schedule a consultation",
       "title": "Make an appointment",
-      "intro": "Select a date and time below. You will receive a confirmation by email straight away. Please do not share medical details when booking unless they are necessary.",
+      "intro": "Load the calendar below and choose a date and time. You will receive a confirmation by email straight away. Please do not share medical details when booking unless they are necessary.",
       "iframeTitle": "Schedule an appointment via Calendly",
       "fallback": "Calendar not loading?",
       "fallbackLink": "Open the scheduler in a new window",
-      "url": "https://calendly.com/matthiskheimensen/30min"
+      "url": "https://calendly.com/matthiskheimensen/30min",
+      "consent": {
+        "text": "The calendar is provided by Calendly. When you load it, Calendly places cookies and processes data such as your IP address. Nothing from Calendly loads until you click.",
+        "policyLink": "Read the cookie statement",
+        "button": "Load calendar",
+        "remembered": "Calendly loads automatically because you consented earlier.",
+        "revoke": "Withdraw consent"
+      }
     },
     "form": {
       "eyebrow": "Prefer to send a message?",
@@ -296,8 +310,8 @@
         {
           "title": "2. Which data do we process?",
           "paragraphs": [
-            "Once the contact or booking system is active, name, contact details, appointment preferences and your message may be processed. Medical data should only be requested through an appropriately secured care process.",
-            "[Inventory all actual suppliers, forms, hosting, email, Calendly and any analytics.]"
+            "Through the contact form we process your name, contact details, topic and message. If you book an appointment, we process the details you enter in Calendly. Medical data should only be requested through an appropriately secured care process.",
+            "We use the following processors for this: Cloudflare (website hosting; processes technical data such as IP addresses), Web3Forms (forwarding the contact form by email) and Calendly (appointment scheduling, only after you load the calendar yourself)."
           ]
         },
         {
@@ -309,7 +323,7 @@
         {
           "title": "4. Retention and sharing",
           "paragraphs": [
-            "Data is not retained longer than necessary or legally required. [Add concrete retention periods by data category.] Appropriate agreements are made with processors and data is not sold."
+            "Data is not retained longer than necessary or legally required. Appropriate agreements are made with processors and data is not sold."
           ]
         },
         {
@@ -317,75 +331,39 @@
           "paragraphs": [
             "You may request access, correction, deletion, restriction, portability or object where the law allows. You may also file a complaint with the Dutch Data Protection Authority."
           ]
-        },
-        {
-          "title": "6. Security and contact",
-          "paragraphs": [
-            "NT Clinic takes appropriate technical and organisational measures. [Add privacy contact and request procedure.]"
-          ]
         }
       ]
     },
     "cookies": {
       "eyebrow": "Legal",
       "title": "Cookie statement",
-      "intro": "This first version does not use tracking, advertising or analytics cookies, so no consent banner is currently required.",
+      "intro": "This website does not set any cookies itself and does not use tracking, advertising or analytics cookies. Calendly only places cookies when you choose to load its calendar on the contact page. That is why no cookie banner is needed.",
       "sections": [
         {
-          "title": "What does the website use now?",
+          "title": "What does the website use?",
           "paragraphs": [
-            "The site loads fonts from Google Fonts. Depending on final hosting and configuration, technical information such as an IP address may be sent to Google. Consider self-hosting the fonts before launch.",
-            "The language choice is included in the URL and is not stored in a cookie."
+            "The website, fonts and images are served from our own domain. No external font or analytics services are used.",
+            "The language choice is included in the URL and is not stored in a cookie. Only if you consent to Calendly is that choice kept in local storage (see below)."
           ]
         },
         {
-          "title": "Future booking integration",
+          "title": "Booking through Calendly",
           "paragraphs": [
-            "When Calendly or another external service is embedded, investigate which cookies and personal data it processes before activation. Non-essential cookies may only load after valid consent."
+            "On the contact page you can book an appointment through Calendly. The calendar only loads after you click ‘Load calendar’. By doing so, you consent to Calendly placing cookies and processing data under Calendly’s cookie and privacy policies.",
+            "Your choice is kept in your browser’s local storage (‘calendly-consent’) so the calendar shows straight away on your next visit. You can withdraw consent at any time with ‘Withdraw consent’ below the calendar, which removes that choice. Cookies Calendly has already placed can be removed in your browser settings.",
+            "Prefer not to load Calendly? Use the contact form, or get in touch by phone or email."
+          ]
+        },
+        {
+          "title": "Contact form",
+          "paragraphs": [
+            "The contact form does not set cookies. Only when you submit it are the details you entered forwarded to NT Clinic by email via Web3Forms."
           ]
         },
         {
           "title": "Changes",
           "paragraphs": [
-            "Update this statement and the consent interface when analytics, video, maps, chat, booking widgets or other external services are added."
-          ]
-        }
-      ]
-    },
-    "disclaimer": {
-      "eyebrow": "Medical information",
-      "title": "Medical disclaimer",
-      "intro": "Draft version — all medical information and emergency instructions must be reviewed by the treating doctor before publication.",
-      "sections": [
-        {
-          "title": "No personal medical advice",
-          "paragraphs": [
-            "The information on this website is general and does not replace a consultation, diagnosis or personal advice from an authorised and competent doctor. Suitability for treatment can only be assessed after a medical assessment."
-          ]
-        },
-        {
-          "title": "Risks and outcomes",
-          "paragraphs": [
-            "Cosmetic injectables are medical procedures and are not risk-free. Effect, duration, recovery and potential side effects vary by person. Outcomes cannot be guaranteed."
-          ]
-        },
-        {
-          "title": "Age and consent",
-          "paragraphs": [
-            "In the Netherlands, cosmetic treatment without medical necessity is generally intended for people aged 18 and over. Informed consent is required for treatment."
-          ]
-        },
-        {
-          "title": "Complaints and emergencies",
-          "paragraphs": [
-            "After treatment, always follow your personal aftercare instructions and contact the clinic immediately via its aftercare number if unexpected symptoms occur. Call 112 in a life-threatening situation. This website is not an emergency service.",
-            "[Add the independent complaints procedure, complaints officer and current availability.]"
-          ]
-        },
-        {
-          "title": "Sources for review",
-          "paragraphs": [
-            "The draft information is aligned with public guidance from the Dutch Health and Youth Care Inspectorate, the Dutch government, the BIG register and the Dutch Data Protection Authority. The clinic remains responsible for accuracy, currency and compliance."
+            "Update this statement when analytics, video, maps, chat or other external services are added. Non-essential cookies may only be placed after valid consent."
           ]
         }
       ]

@@ -29,8 +29,7 @@
       "email": "info@ntclinic.nl",
       "copyright": "© 2026 NT Clinic. Alle rechten voorbehouden.",
       "privacy": "Privacy",
-      "cookies": "Cookies",
-      "disclaimer": "Medische disclaimer"
+      "cookies": "Cookies"
     }
   },
   "meta": {
@@ -61,10 +60,6 @@
     "cookies": {
       "title": "Cookieverklaring | NT Clinic",
       "description": "Lees welke cookies en lokale opslag deze website gebruikt."
-    },
-    "disclaimer": {
-      "title": "Medische disclaimer | NT Clinic",
-      "description": "Belangrijke informatie over de medische content op de website van NT Clinic."
     }
   },
   "home": {
@@ -197,16 +192,28 @@
           "name": "Voorhoofdrimpels",
           "detail": "",
           "price": [
-            { "label": "Vrouw", "amount": "€120,-" },
-            { "label": "Man", "amount": "€150,-" }
+            {
+              "label": "Vrouw",
+              "amount": "€120,-"
+            },
+            {
+              "label": "Man",
+              "amount": "€150,-"
+            }
           ]
         },
         {
           "name": "Fronsrimpels",
           "detail": "",
           "price": [
-            { "label": "Vrouw", "amount": "€120,-" },
-            { "label": "Man", "amount": "€150,-" }
+            {
+              "label": "Vrouw",
+              "amount": "€120,-"
+            },
+            {
+              "label": "Man",
+              "amount": "€150,-"
+            }
           ]
         },
         {
@@ -257,11 +264,18 @@
     "booking": {
       "eyebrow": "Consult inplannen",
       "title": "Maak een afspraak",
-      "intro": "Selecteer hieronder een datum en tijd. U ontvangt direct een bevestiging per e-mail. Deel bij het inplannen geen medische gegevens die niet nodig zijn.",
+      "intro": "Laad hieronder de agenda en kies een datum en tijd. U ontvangt direct een bevestiging per e-mail. Deel bij het inplannen geen medische gegevens die niet nodig zijn.",
       "iframeTitle": "Afspraak inplannen via Calendly",
       "fallback": "Wordt de agenda niet geladen?",
       "fallbackLink": "Open de planner in een nieuw venster",
-      "url": "https://calendly.com/matthiskheimensen/30min"
+      "url": "https://calendly.com/matthiskheimensen/30min",
+      "consent": {
+        "text": "De agenda wordt aangeboden door Calendly. Wanneer u deze laadt, plaatst Calendly cookies en verwerkt het gegevens zoals uw IP-adres. Zonder uw klik wordt er niets van Calendly geladen.",
+        "policyLink": "Lees de cookieverklaring",
+        "button": "Agenda laden",
+        "remembered": "Calendly wordt automatisch geladen omdat u daar eerder toestemming voor gaf.",
+        "revoke": "Toestemming intrekken"
+      }
     },
     "form": {
       "eyebrow": "Liever een bericht sturen?",
@@ -285,7 +299,7 @@
     "privacy": {
       "eyebrow": "Juridisch",
       "title": "Privacyverklaring",
-      "intro": "Conceptversie — laat deze verklaring vóór publicatie juridisch en operationeel controleren en vul alle placeholders in.",
+      "intro": "",
       "sections": [
         {
           "title": "1. Wie is verantwoordelijk?",
@@ -296,8 +310,8 @@
         {
           "title": "2. Welke gegevens verwerken we?",
           "paragraphs": [
-            "Wanneer het contact- of boekingssysteem wordt geactiveerd, kunnen naam, contactgegevens, afspraakvoorkeur en uw bericht worden verwerkt. Medische gegevens horen alleen via een passend beveiligd zorgproces te worden uitgevraagd.",
-            "[Inventariseer alle werkelijk gebruikte leveranciers, formulieren, hosting, e-mail, Calendly en eventuele analytics.]"
+            "Via het contactformulier verwerken we uw naam, contactgegevens, onderwerp en bericht. Als u een afspraak inplant, verwerken we de gegevens die u in Calendly invult. Medische gegevens horen alleen via een passend beveiligd zorgproces te worden uitgevraagd.",
+            "Hiervoor maken we gebruik van de volgende verwerkers: Cloudflare (hosting van de website; verwerkt technische gegevens zoals IP-adressen), Web3Forms (doorsturen van het contactformulier per e-mail) en Calendly (afspraakplanning, alleen nadat u de agenda zelf laadt)."
           ]
         },
         {
@@ -309,7 +323,7 @@
         {
           "title": "4. Bewaartermijnen en delen",
           "paragraphs": [
-            "Gegevens worden niet langer bewaard dan nodig of wettelijk verplicht. [Concrete termijnen per gegevenscategorie toevoegen.] Met verwerkers worden passende afspraken gemaakt en gegevens worden niet verkocht."
+            "Gegevens worden niet langer bewaard dan nodig of wettelijk verplicht. Met verwerkers worden passende afspraken gemaakt en gegevens worden niet verkocht."
           ]
         },
         {
@@ -317,75 +331,39 @@
           "paragraphs": [
             "U kunt vragen om inzage, correctie, verwijdering, beperking, overdracht of bezwaar, voor zover de wet dit toestaat. U kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens."
           ]
-        },
-        {
-          "title": "6. Beveiliging en contact",
-          "paragraphs": [
-            "NT Clinic neemt passende technische en organisatorische maatregelen. [Privacycontact en procedure voor verzoeken toevoegen.]"
-          ]
         }
-      ]
+     ]
     },
     "cookies": {
       "eyebrow": "Juridisch",
       "title": "Cookieverklaring",
-      "intro": "Deze eerste versie gebruikt geen tracking-, advertentie- of analysecookies. Daarom is er nu geen toestemmingsbanner nodig.",
+      "intro": "Deze website plaatst zelf geen cookies en gebruikt geen tracking-, advertentie- of analysecookies. Alleen wanneer u op de contactpagina zelf de Calendly-agenda laadt, plaatst Calendly cookies. Daarom is er geen cookiebanner nodig.",
       "sections": [
         {
-          "title": "Wat gebruikt de website nu?",
+          "title": "Wat gebruikt de website?",
           "paragraphs": [
-            "De website laadt lettertypen van Google Fonts. Afhankelijk van de uiteindelijke hosting en configuratie kan daarbij technische informatie, zoals een IP-adres, aan Google worden doorgegeven. Overweeg de lettertypen lokaal te hosten vóór livegang.",
-            "De taalkeuze wordt in de URL opgenomen en niet in een cookie opgeslagen."
+            "De website, lettertypen en afbeeldingen worden vanaf ons eigen domein geladen. Er worden geen externe lettertype- of analysediensten gebruikt.",
+            "De taalkeuze wordt in de URL opgenomen en niet in een cookie bewaard. Alleen als u Calendly toestemming geeft, wordt die keuze in de lokale opslag bewaard (zie hieronder)."
           ]
         },
         {
-          "title": "Toekomstige boekingskoppeling",
+          "title": "Afspraken inplannen via Calendly",
           "paragraphs": [
-            "Wanneer Calendly of een andere externe dienst wordt ingebed, moet vóór activering worden onderzocht welke cookies en persoonsgegevens die dienst verwerkt. Niet-noodzakelijke cookies mogen pas na geldige toestemming worden geladen."
+            "Op de contactpagina kunt u een afspraak inplannen via Calendly. De agenda wordt pas geladen nadat u op ‘Agenda laden’ klikt. Daarmee geeft u toestemming dat Calendly cookies plaatst en gegevens verwerkt volgens het cookie- en privacybeleid van Calendly.",
+            "Uw keuze wordt in de lokale opslag van uw browser bewaard (‘calendly-consent’), zodat de agenda bij een volgend bezoek direct wordt getoond. U kunt uw toestemming op elk moment intrekken via ‘Toestemming intrekken’ onder de agenda; die keuze wordt dan verwijderd. Cookies die Calendly al heeft geplaatst, verwijdert u via de instellingen van uw browser.",
+            "Wilt u Calendly niet laden? Gebruik dan het contactformulier of neem telefonisch of per e-mail contact op."
+          ]
+        },
+        {
+          "title": "Contactformulier",
+          "paragraphs": [
+            "Het contactformulier plaatst geen cookies. Pas wanneer u het formulier verstuurt, worden de ingevulde gegevens via Web3Forms per e-mail naar NT Clinic doorgestuurd."
           ]
         },
         {
           "title": "Wijzigingen",
           "paragraphs": [
-            "Werk deze verklaring en de toestemmingsinterface bij zodra analytics, video, kaarten, chat, boekingswidgets of andere externe diensten worden toegevoegd."
-          ]
-        }
-      ]
-    },
-    "disclaimer": {
-      "eyebrow": "Medische informatie",
-      "title": "Medische disclaimer",
-      "intro": "Conceptversie — alle medische informatie en noodinstructies moeten vóór publicatie door de behandelend arts worden gecontroleerd.",
-      "sections": [
-        {
-          "title": "Geen persoonlijk medisch advies",
-          "paragraphs": [
-            "De informatie op deze website is algemeen en vervangt geen consult, diagnose of persoonlijk advies van een bevoegde en bekwame arts. Geschiktheid voor een behandeling kan alleen na een medische intake worden beoordeeld."
-          ]
-        },
-        {
-          "title": "Risico’s en resultaten",
-          "paragraphs": [
-            "Cosmetische injectables zijn medische handelingen en niet zonder risico. Effect, duur, herstel en mogelijke bijwerkingen verschillen per persoon. Resultaten kunnen niet worden gegarandeerd."
-          ]
-        },
-        {
-          "title": "Leeftijd en toestemming",
-          "paragraphs": [
-            "Cosmetische behandelingen zonder medische noodzaak zijn in Nederland in beginsel bedoeld voor personen van 18 jaar en ouder. Voor een behandeling is geïnformeerde toestemming nodig."
-          ]
-        },
-        {
-          "title": "Klachten en spoed",
-          "paragraphs": [
-            "Na een behandeling volgt u altijd de persoonlijke nazorginstructies en neemt u bij onverwachte klachten direct contact op via het door de kliniek verstrekte nazorgnummer. Bel bij een levensbedreigende situatie 112. Deze website is geen spoeddienst.",
-            "[Voeg de onafhankelijke klachtenregeling, klachtenfunctionaris en actuele bereikbaarheid toe.]"
-          ]
-        },
-        {
-          "title": "Bronnen voor controle",
-          "paragraphs": [
-            "De conceptinformatie is afgestemd op publieke informatie van de Inspectie Gezondheidszorg en Jeugd, Rijksoverheid, het BIG-register en de Autoriteit Persoonsgegevens. De kliniek blijft verantwoordelijk voor juistheid, actualiteit en naleving."
+            "Werk deze verklaring bij zodra analytics, video, kaarten, chat of andere externe diensten worden toegevoegd. Niet-noodzakelijke cookies mogen pas na geldige toestemming worden geplaatst."
           ]
         }
       ]
